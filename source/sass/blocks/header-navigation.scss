@@ -7,6 +7,7 @@
   font-family: "Oswald Medium", sans-serif;
   font-weight: 500;
   background-color: #b1f3ff;  //убрать
+  position: absolute;
 
   .header-navigation__list {
     flex-direction: column;
@@ -76,6 +77,16 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  font-size: 20px;
+  line-height: 20px;
+
+  &:hover:not(.header-navigation__link--current) {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header-navigation__link--current {

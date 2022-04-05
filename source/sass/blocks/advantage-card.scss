@@ -2,10 +2,39 @@
 }
 
 .advantage-card__header {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
 }
 
 .advantage-card__description {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #444444;
 }
 
 .advantage-card__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(/img/advantage-card-arrow.png);
+    background-repeat: no-repeat;
+    min-width: 24px;
+    min-height: 12px;
+    top: 25%;
+    right: -50%;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
