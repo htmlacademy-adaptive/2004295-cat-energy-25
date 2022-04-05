@@ -1,16 +1,50 @@
 .header-navigation {
+  display: flex;
 }
 
+.header-navigation--vertical {
+  flex-direction: column;
+  align-items: center;
+  font-family: "Oswald Medium", sans-serif;
+  font-weight: 500;
+
+  .header-navigation__list {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .header-navigation__item {
+    border-top: 1px solid #E6E6E6;
+  }
+}
+
+// .header-navigation--hidden {
+//   display: none;
+// }
+
 .header-navigation__toggle {
+  width: 24px;
+  background-color: transparent;
+  outline: none;
 }
 
 .header-navigation__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .header-navigation__item {
+  padding: 22px 0 24px;
 }
 
 .header-navigation__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .header-navigation__link--drop-down {
