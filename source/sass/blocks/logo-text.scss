@@ -1,2 +1,19 @@
 .logo-text {
 }
+
+.logo-text--footer {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-text__image {
+  path:last-child {
+    fill: #111111;
+  }
+}

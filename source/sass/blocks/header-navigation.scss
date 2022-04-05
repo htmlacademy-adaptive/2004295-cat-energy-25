@@ -1,17 +1,16 @@
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-navigation--vertical {
-  flex-direction: column;
-  align-items: center;
   font-family: "Oswald Medium", sans-serif;
   font-weight: 500;
+  background-color: #b1f3ff;  //убрать
 
   .header-navigation__list {
     flex-direction: column;
     align-items: center;
-
   }
 
   .header-navigation__item {
@@ -24,9 +23,40 @@
 // }
 
 .header-navigation__toggle {
-  width: 24px;
+  position: absolute;
   background-color: transparent;
-  outline: none;
+  padding: 0;
+  min-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-navigation__toggle-burger {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6.5px;
+    display: block;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 6.5px;
+    display: block;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+  }
 }
 
 .header-navigation__list {
@@ -39,15 +69,13 @@
 
 .header-navigation__item {
   padding: 22px 0 24px;
+  background-color: burlywood; //delete
 }
 
 .header-navigation__link {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-}
-
-.header-navigation__link--drop-down {
 }
 
 .header-navigation__link--current {
