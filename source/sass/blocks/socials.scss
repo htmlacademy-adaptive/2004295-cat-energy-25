@@ -3,9 +3,16 @@
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0 21px;
 }
 
 .socials__item {
+
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
 
   &:hover .socials__image {
     fill: #68B738;
@@ -16,6 +23,8 @@
 }
 
 .socials__link {
+  display: flex;
+  align-items: center;
 }
 
 .socials__link--vk {

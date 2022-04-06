@@ -1,13 +1,13 @@
 .header {
   display: flex;
-  align-items: center;
-
   padding: 0 20px;
+  min-height: 66px;
 }
 
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .header__logo {

@@ -2,6 +2,9 @@
 }
 
 .main-slider__image-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .main-slider__image {

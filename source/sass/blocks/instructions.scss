@@ -1,23 +1,50 @@
 .instructions {
+  padding: 0 20px;
 }
 
 .instructions__wrapper {
 }
 
 .instructions__header {
+  text-align: start;
 }
 
 .instructions__list {
+  margin: 42px 0 53px;
+  padding: 0;
+  list-style: none;
 }
 
 .instructions__item {
-}
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+  position: relative;
 
-.instructions__item--usefull {
+  &::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #68B738;
+  bottom: -3px;
+}
 }
 
 .instructions__description {
   margin: 0;
+  font-family: Arial, sans-serif;
+  font-family: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-align: start;
+  grid-column: 2/3;
+  position: relative;
+}
+
+.instructions__item--usefull {
 }
 
 .instructions__item--easy {

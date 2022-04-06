@@ -1,12 +1,32 @@
 .values-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px;
+  column-gap: 32px;
 }
 
 .values-list__wrapper {
-}
-
-.values-list__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid #CDCDCD;
 }
 
 .values-list__indicator {
   margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.values-list__title {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-transform: lowercase;
+  padding: 0 14px;
+  margin-top: 7.53px;
 }

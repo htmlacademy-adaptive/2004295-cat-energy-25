@@ -1,7 +1,11 @@
 .example {
+  background-color: #EAEAEA;
+  padding: 25px 20px 40px;
 }
 
 .example__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .example__article {

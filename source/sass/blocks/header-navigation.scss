@@ -4,10 +4,10 @@
 }
 
 .header-navigation--vertical {
+  position: absolute;
   font-family: "Oswald Medium", sans-serif;
   font-weight: 500;
   background-color: #b1f3ff;  //убрать
-  position: absolute;
 
   .header-navigation__list {
     flex-direction: column;
@@ -19,9 +19,9 @@
   }
 }
 
-// .header-navigation--hidden {
-//   display: none;
-// }
+.header-navigation--hidden {      //скрывашка
+  display: none;
+}
 
 .header-navigation__toggle {
   position: absolute;

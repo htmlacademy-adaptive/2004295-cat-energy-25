@@ -1,8 +1,9 @@
 .main-product {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-product__title {
-  margin: 0;
 }
 
 .main-product__slogan {
