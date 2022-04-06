@@ -1,5 +1,5 @@
 .instructions {
-  padding: 0 20px;
+  padding: 0 $base-indent;
 }
 
 .instructions__wrapper {
@@ -16,10 +16,10 @@
 }
 
 .instructions__item {
-  margin-bottom: 20px;
+  margin-bottom: $base-indent;
   display: grid;
   grid-template-columns: 60px 1fr;
-  column-gap: 20px;
+  column-gap: $base-indent;
   position: relative;
 
   &::before {
@@ -34,7 +34,7 @@
 
 .instructions__description {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: $arial;
   font-family: 400;
   font-size: 14px;
   line-height: 18px;

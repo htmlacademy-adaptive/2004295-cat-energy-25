@@ -1,5 +1,5 @@
 .advantages {
-  padding: 0 20px;
+  padding: 0 $base-indent;
 }
 
 .advantages__wrapper {
@@ -11,7 +11,7 @@
 }
 
 .advantages__item {
-  background-color: #F2F2F2;
-  margin-bottom: 20px;
+  background-color: $grey;
+  margin-bottom: $base-indent;
   padding: 30px 33px 18px 20px;
 }

@@ -1,5 +1,5 @@
 .partnership {
-  padding: 26px 20px;
+  padding: 26px $base-indent;
 }
 
 .partnership__wrapper {
@@ -18,7 +18,7 @@
 }
 
 .partnership__description {
-  font-family: Arial, sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 20px;
   color: #444444;

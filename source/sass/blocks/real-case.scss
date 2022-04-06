@@ -8,18 +8,18 @@
 
 .real-case__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: $base-indent;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  font-family: Arial, sans-serif;
+  font-family: $arial;
   font-weight: 400;
   text-align: start;
 }
 
 .real-case__values {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: $base-indent;
 }
 
 .real-case__result {
