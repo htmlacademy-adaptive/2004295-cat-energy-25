@@ -1,20 +1,53 @@
 .product-presentation {
-  background-color: $base-color1;
-  background-image: url("../../img/index-background-mobile.jpg");
-  background-repeat: no-repeat;
+  padding: 27px $base-indent 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    background-image: url("../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, $base-color1, $base-color1);
+    opacity: 0.85;
+  }
 }
 
 .product-presentation__wrapper {
-  background-color: rgba(255, 195, 106, 0.16);
-  padding: 0 $base-indent;
-  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
 }
 
+// .product-presentation__description-wrapper {
+//   background-image: url("../../img/index-background-mobile.jpg");
+//   background-repeat: no-repeat;
+// }
+
 .product-presentation__description {
+  z-index: 1;
 }
 
 .product-presentation__image-wrapper {
+  z-index: 1;
 }
 
 .product-presentation__image {
+}
+
+.product-presentation__link {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 0;
 }
