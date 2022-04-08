@@ -2,10 +2,7 @@
 }
 
 .header-navigation__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -36,4 +33,14 @@
 }
 
 .header-navigation__link--current {
+  text-decoration: underline;
+  text-decoration-color: $base-color1;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
+
+//*Прячет навигацию
+
+// .header__navigation--hidden {
+//   display: none;
+// }
