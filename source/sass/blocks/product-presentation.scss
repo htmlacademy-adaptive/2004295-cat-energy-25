@@ -1,6 +1,7 @@
 .product-presentation {
   padding: 27px $base-indent 0;
   position: relative;
+  margin-bottom: $base-indent;
 
   &::before {
     content: "";
@@ -37,13 +38,15 @@
 
 .product-presentation__description {
   z-index: 1;
+  margin-bottom: 29px;
 }
 
 .product-presentation__image-wrapper {
-  z-index: 1;
 }
 
 .product-presentation__image {
+  z-index: 1;
+  margin-bottom: 3px;
 }
 
 .product-presentation__link {

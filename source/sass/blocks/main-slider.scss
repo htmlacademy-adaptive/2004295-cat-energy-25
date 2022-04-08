@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .main-slider__image {
@@ -16,14 +17,58 @@
 .main-slider__image--small {
 }
 
-.main-slider__range-wrapper {
-}
-
 .main-slider__range-form {
+  display: grid;
+  grid-template-columns: 49px 86px 49px;
+  grid-template-rows: 30px;
+  column-gap: 13px;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-slider__range-label {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .main-slider__range {
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+
+input[type=range]  {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  overflow: hidden;
+  height: 14px;
+  border-radius: 6px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 1px;
+  -webkit-appearance: none;
+  box-shadow: -86px 0 0 86px $base-color1;
+}
+
+input[type=range]::-moz-range-track {
+    height: 14px;
+    background-color: #ffffff;
+}
+
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: -86px 0 0 86px $base-color1;
+  padding: 0px;
+  margin: 0px;
 }

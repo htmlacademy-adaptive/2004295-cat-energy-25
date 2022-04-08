@@ -12,7 +12,7 @@
     <!-- *Header -->
     <header class="header">
       <div class="header__wrapper">
-        <a class="header-logo logo-icon" href="#">
+        <a class="logo-icon" href="#">
             <svg width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)">
                 <path
@@ -42,7 +42,7 @@
             </svg>
             <span class="visually-hidden">Логотип сайта.</span>
         </a>
-        <a class="header-logo logo-text">
+        <a class="logo-text">
             <svg class="logo-text__image" width="101" height="18" viewBox="0 0 118 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M1.66 20a8.29 8.29 0 0 1-1.4-5.19v-7.5a8.42 8.42 0 0 1 1.38-5.24C2.567.877 4.15.283 6.39.29c2.24.007 3.757.53 4.55 1.57a6.72 6.72 0 0 1 1.33 4.49v1.76H8.13V6.2A10.001 10.001 0 0 0 8 4.7a1.68 1.68 0 0 0-.47-.95 1.56 1.56 0 0 0-1.15-.37 1.46 1.46 0 0 0-1.5.75 5.47 5.47 0 0 0-.34 2.2v9.52a4.78 4.78 0 0 0 .39 2.2 1.48 1.48 0 0 0 1.45.73 1.35 1.35 0 0 0 1.4-.74 5.84 5.84 0 0 0 .31-2.19v-2h4.14v1.73A7.25 7.25 0 0 1 11 20.19c-.88 1.1-2.4 1.64-4.56 1.64-2.16 0-3.85-.6-4.78-1.83ZM17.91.58h4.74l4 21h-3.94L22 16.94h-3.32l-.8 4.61h-4L17.91.58Zm3.65 13.72L20.3 5.86l-1.25 8.44h2.51ZM29.72 3.74h-3.24V.58H37.2v3.16H34v17.81h-4.29l.01-17.81Z"
@@ -52,10 +52,10 @@
                 fill="#444" />
             </svg>
         </a>
-        <button class="header-navigation__toggle-button" type="button" value="Раскрывающееся меню.">
-          <span class="header-navigation__toggle-icon"></span>
+        <button class="header__toggle-button" type="button" value="Раскрывающееся меню.">
+          <span class="header__toggle-icon"></span>
         </button>
-        <nav class="header__navigation header-navigation header-navigation--vertical header-navigation--hidden">
+        <nav class="header__navigation header__navigation--hidden header-navigation">
           <ul class="header-navigation__list">
             <li class="header-navigation__item">
               <a class="header-navigation__link header-navigation__link--current">Главная</a>
@@ -78,96 +78,81 @@
             <h1 class="main-product__title primary-title primary-title--light">Функциональное питание для котов</h1>
             <p class="main-product__slogan ">Занялся собой? Займись котом!</p>
           </div>
-          <div class="product-presentation__image-wrapper">
-            <img class="product-presentation__image" width="280" height="270" src="/img/index-can-mobile.png"
-              alt="Cat Energy Product.">
-          </div>
+          <img class="product-presentation__image" width="280" height="270" src="/img/index-can-mobile.png" alt="Cat Energy Product.">
           <a class="product-presentation__link primary-button" href="/source/form.html">Подобрать программу</a>
         </div>
       </section>
       <!-- *Advantages -->
       <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества.</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantage-card">
-                <h3 class="advantage-card__header">Похудение</h3>
-                <p class="advantage-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-                  деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="advantage-card__link" href="/source/catalog_slim.html">Каталог Slim</a>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantage-card">
-                <h3 class="advantage-card__header">Набор массы</h3>
-                <p class="advantage-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-                  Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="advantage-card__link" href="/source/catalog_pro.html">Каталог Pro</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <h2 class="visually-hidden">Преимущества.</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantage-card advantage-card--slimming">
+              <h3 class="advantage-card__header">Похудение</h3>
+              <p class="advantage-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+                деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="advantage-card__link" href="/source/catalog_slim.html">Каталог Slim</a>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantage-card advantage-card--mass">
+              <h3 class="advantage-card__header">Набор массы</h3>
+              <p class="advantage-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+                Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="advantage-card__link" href="/source/catalog_pro.html">Каталог Pro</a>
+            </div>
+          </li>
+        </ul>
       </section>
       <!-- *Instructions -->
       <section class="instructions">
-        <div class="instructions__wrapper">
-          <h2 class="instructions__header primary-title primary-title--big">Как это работает</h2>
-          <ol class="instructions__list">
-            <li class="instructions__item instructions__item--usefull">
-              <p class=" instructions__description">Функциональное питание содержит только полезные питательные вещества.
-              </p>
-            </li>
-            <li class="instructions__item instructions__item--easy">
-              <p class=" instructions__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
-                готово.</p>
-            </li>
-            <li class="instructions__item instructions__item--food">
-              <p class=" instructions__description">Замените один-два приема обычной еды на наше функциональное питание.
-              </p>
-            </li>
-            <li class="instructions__item instructions__item--result">
-              <p class=" instructions__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-              </p>
-            </li>
-          </ol>
-        </div>
+        <h2 class="instructions__header primary-title primary-title--big">Как это работает</h2>
+        <ol class="instructions__list">
+          <li class="instructions__item instructions__item--usefull">
+            <p class=" instructions__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="instructions__item instructions__item--easy">
+            <p class=" instructions__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="instructions__item instructions__item--food">
+            <p class=" instructions__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="instructions__item instructions__item--result">
+            <p class=" instructions__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ol>
       </section>
       <!-- *Example -->
       <div class="example">
-        <div class="example__wrapper">
-          <article class="example__article real-case ">
-            <h2 class="real-case__title primary-title primary-title--big">Живой пример</h2>
-            <p class="real-case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-              Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-              спит по 16 часов в день.</p>
-            <dl class="real-case__values values-list">
-              <div class="values-list__wrapper">
-                <dd class="values-list__indicator">5 кг</dd>
-                <dt class="values-list__title">Снижение <br>веса</dt>
-              </div>
-              <div class="values-list__wrapper">
-                <dd class="values-list__indicator">60 дней</dd>
-                <dt class="values-list__title">Затрачено <br>времени</dt>
-              </div>
-            </dl>
-            <p class="real-case__result">Затраты на питание: 15 000 РУБ. </p>
-          </article>
-          <div class="example__slider main-slider">
-            <div class="main-slider__image-wrapper">
-              <img class="main-slider__image main-slider__image--big" width="280" height="232"
-                src="/img/cat-fat.png" alt="Big cat.">
-              <img class="main-slider__image main-slider__image--small" width="280" height="232"
-                src="/img/cat-skinny.png" alt="Small cat.">
+        <article class="example__article real-case ">
+          <h2 class="real-case__title primary-title primary-title--big">Живой пример</h2>
+          <p class="real-case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+            спит по 16 часов в день.</p>
+          <dl class="real-case__values values-list">
+            <div class="values-list__wrapper">
+              <dd class="values-list__indicator">5 кг</dd>
+              <dt class="values-list__title">Снижение <br>веса</dt>
             </div>
-            <div class="main-slider__range-wrapper">
-              <form class="main-slider__range-form" method="post">
-                <label class="main-slider__range-label">Было
-                  <input class="main-slider__range" type="range" name="Результат">Стало
-                </label>
-              </form>
+            <div class="values-list__wrapper">
+              <dd class="values-list__indicator">60 дней</dd>
+              <dt class="values-list__title">Затрачено <br>времени</dt>
             </div>
+          </dl>
+          <p class="real-case__result">Затраты на питание: 15 000 РУБ. </p>
+        </article>
+        <div class="example__slider main-slider">
+          <div class="main-slider__image-wrapper">
+            <img class="main-slider__image main-slider__image--big" width="280" height="232"
+              src="/img/cat-fat.png" alt="Big cat.">
+            <img class="main-slider__image main-slider__image--small" width="280" height="232"
+              src="/img/cat-skinny.png" alt="Small cat.">
           </div>
+          <form class="main-slider__range-form" method="post">
+            <label class="main-slider__range-label" for="result">Было</label>
+            <input class="main-slider__range" type="range" name="Результат" id="result">
+            <label class="main-slider__range-label" for="result">Стало</label>
+          </form>
         </div>
       </div>
       <!-- *Partnership -->
@@ -181,14 +166,11 @@
       <!-- *Map -->
       <section class="map">
         <h3 class="visually-hidden">Адрес на карте.</h3>
-        <div class="map__wrapper">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2984521306922!2d30.3228059997934!3d59.938830686690956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648811503924!5m2!1sru!2sru"
-            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-          <span class="visually-hidden">Custom map point.</span>
-        </div>
+        <iframe class="map__frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2984521306922!2d30.3228059997934!3d59.938830686690956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648811503924!5m2!1sru!2sru"
+          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </section>
     </main>
     <!-- *Footer -->

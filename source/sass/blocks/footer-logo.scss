@@ -1,6 +1,4 @@
 .footer-logo {
-  display: flex;
-  align-items: center;
 
   &:hover  .footer-logo__icon-path {
     fill: $base-color1;
@@ -14,8 +12,8 @@
 .footer-logo__text {
   text-decoration: none;
   color: #444444;
-  margin-right: auto;
 }
 
 .footer-logo__icon {
+  display: flex;
 }
