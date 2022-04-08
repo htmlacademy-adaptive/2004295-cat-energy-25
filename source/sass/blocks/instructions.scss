@@ -16,7 +16,6 @@
 }
 
 .instructions__item--usefull {
-
   &::after {
     content: "";
     position: absolute;
@@ -30,7 +29,6 @@
 }
 
 .instructions__item--easy {
-
   &::after {
     content: "";
     position: absolute;
@@ -44,7 +42,6 @@
 }
 
 .instructions__item--food {
-
   &::after {
     content: "";
     position: absolute;
@@ -58,7 +55,6 @@
 }
 
 .instructions__item--result {
-
   &::after {
     content: "";
     position: absolute;
@@ -78,12 +74,12 @@
   position: relative;
 
   &::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: $base-color1;
-  bottom: -3px;
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $base-color1;
+    bottom: -3px;
   }
 
   &:not(:last-child) {

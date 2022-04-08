@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 //Навигация
@@ -20,6 +19,8 @@
   flex-direction: column;
   z-index: 3;
   position: absolute;
+  top: 0;
+  right: 0;
 }
 
 //Кнопка меню

@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    }
+  }
 
   &::after {
     content: "";
@@ -39,9 +39,6 @@
 .product-presentation__description {
   z-index: 1;
   margin-bottom: 29px;
-}
-
-.product-presentation__image-wrapper {
 }
 
 .product-presentation__image {
