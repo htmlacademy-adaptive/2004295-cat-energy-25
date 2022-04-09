@@ -1,16 +1,14 @@
 @import "variables.scss";
-@import "fonts.scss";
-@import "global.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/typography.scss";
+@import "global/buttons.scss";
+@import "global/logo.scss";
 @import "blocks/header.scss";
-@import "blocks/logo.scss";
-@import "blocks/logo-icon.scss";
-@import "blocks/logo-text.scss";
 @import "blocks/header-navigation.scss";
 @import "blocks/main.scss";
 @import "blocks/product-presentation.scss";
 @import "blocks/main-product.scss";
-@import "blocks/primary-title.scss";
-@import "blocks/primary-button.scss";
 @import "blocks/advantages.scss";
 @import "blocks/advantage-card.scss";
 @import "blocks/instructions.scss";
@@ -22,4 +20,3 @@
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
 @import "blocks/socials.scss";
-@import "blocks/footer-logo.scss";

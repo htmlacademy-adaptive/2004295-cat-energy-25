@@ -41,7 +41,7 @@
   font-family: $third-font-family;
   font-size: 14px;
   line-height: 18px;
-  color$text-dark-lighter;
+  color: $text-dark-lighter;
   margin: 0;
   margin-bottom: 42px;
   text-align: start;
@@ -52,7 +52,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  $text-dark
+  color: $text-dark;
   position: relative;
 
   &::after {
