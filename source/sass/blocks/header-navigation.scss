@@ -12,15 +12,15 @@
 .header-navigation__item {
   border-top: 1px solid #e6e6e6;
   padding: 22px 0 24px;
-  background-color: #ffffff;
+  background-color: $background-light;
 }
 
 .header-navigation__link {
-  font-family: "Oswald Medium", sans-serif;
+  font-family: $secondary-font-family;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  $text-dark
   font-size: 20px;
   line-height: 20px;
 
@@ -35,7 +35,7 @@
 
 .header-navigation__link--current {
   text-decoration: underline;
-  text-decoration-color: $base-color1;
+  text-decoration-color: $primary-color;
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }

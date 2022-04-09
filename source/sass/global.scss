@@ -7,9 +7,9 @@
   height: 100%;
   min-width: 320px;
 
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $primary-font-family;
   font-weight: 400;
-  color: #000000;
+  $text-dark
 }
 
 .body__wrapper {
@@ -19,7 +19,7 @@
   min-height: 100%;
   width: 320px;
 
-  background-color: #ffffff;
+  background-color: $background-light;
   position: relative;
 }
 

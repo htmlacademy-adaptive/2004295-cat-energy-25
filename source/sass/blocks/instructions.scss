@@ -78,7 +78,7 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    background-color: $base-color1;
+    background-color: $primary-color;
     bottom: -3px;
   }
 
@@ -89,9 +89,9 @@
 
 .instructions__description {
   margin: 0;
-  font-family: $arial;
+  font-family: $third-font-family;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color$text-dark-lighter;
   grid-column: 2/3;
 }

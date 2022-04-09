@@ -39,7 +39,7 @@
   display: block;
   width: 24px;
   height: 1.5px;
-  background-color: #000000;
+  background-color: $background-dark;
 
   &::before {
     position: absolute;
@@ -48,7 +48,7 @@
     display: block;
     width: 24px;
     height: 1.5px;
-    background-color: #000000;
+    background-color: $background-dark;
   }
 
   &::after {
@@ -58,7 +58,7 @@
     display: block;
     width: 24px;
     height: 1.5px;
-    background-color: #000000;
+    background-color: $background-dark;
   }
 }
 

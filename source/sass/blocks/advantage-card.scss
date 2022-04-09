@@ -38,10 +38,10 @@
 }
 
 .advantage-card__description {
-  font-family: $arial;
+  font-family: $third-font-family;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color$text-dark-lighter;
   margin: 0;
   margin-bottom: 42px;
   text-align: start;
@@ -52,7 +52,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  $text-dark
   position: relative;
 
   &::after {

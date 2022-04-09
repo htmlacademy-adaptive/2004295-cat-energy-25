@@ -1,6 +1,6 @@
 .footer-logo {
   &:hover .footer-logo__icon-path {
-    fill: $base-color1;
+    fill: $primary-color;
   }
 
   &:active {
@@ -10,7 +10,7 @@
 
 .footer-logo__text {
   text-decoration: none;
-  color: #444444;
+  color$text-dark-lighter;
 }
 
 .footer-logo__icon {
