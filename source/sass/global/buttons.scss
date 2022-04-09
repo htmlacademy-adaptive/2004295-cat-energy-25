@@ -1,9 +1,11 @@
 .primary-button {
+  font-family: inherit;
   text-decoration: none;
   text-transform: uppercase;
   color: $text-light;
   border: none;
   background-color: $primary-color;
+  text-align: center;
 
   &:hover {
     background-color: $primary-color-dark;
