@@ -1,11 +1,30 @@
 .person {
 }
 
-.person__title {
+.person__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 }
 
 .person__input {
+  padding: 13px 15px 14px;
+  border: 1px solid $reserve-color-2;
+  box-sizing: border-box;
 }
 
-.person__input--number {
+.person__input--name {
+  width: 229px;
+}
+
+.person__input--weight {
+  width: 204px;
+}
+
+.person__input--age {
+  width: 172px;
 }

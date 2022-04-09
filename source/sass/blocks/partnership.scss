@@ -1,5 +1,10 @@
 .partnership {
   padding: 26px $base-indent;
+  background-color: $secondary-color;
+}
+
+.partnership--light {
+  background-color: $background-light;
 }
 
 .partnership__wrapper {
