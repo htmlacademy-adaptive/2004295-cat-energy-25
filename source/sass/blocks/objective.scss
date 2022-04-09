@@ -2,9 +2,12 @@
 }
 
 .objective__title {
+  color: $text-dark-lighter-2;
 }
 
 .objective__input {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .objective__input--checked {

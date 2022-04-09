@@ -1,10 +1,7 @@
 .form {
-}
-
-.form__title {
-}
-
-.form__subtitle {
+  fieldset {
+    border: none;
+  }
 }
 
 .form__person {
@@ -26,4 +23,7 @@
 }
 
 .form__notice {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $third-font-family;
 }

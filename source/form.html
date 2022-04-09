@@ -13,7 +13,7 @@
     <!-- *Header -->
     <header class="header">
       <div class="header__wrapper">
-        <a class="logo-icon" href="#">
+        <a class="logo-icon" href="index.html">
             <svg width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)">
                 <path
@@ -75,63 +75,63 @@
     <main class="main">
       <!-- *Search_form -->
       <section class="search-form">
+        <h1 class="search-form__title primary-title">Подбор программы</h1>
+        <p class="search-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <h1 class="form__title primary-title">Подбор программы</h1>
-          <h2 class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
           <fieldset class="form__person person">
-            <legend class="visually-hidden secondary-title">Персональные данные питомца.</legend>
-            <label class="person__title primary-text primary-text--light">ИМЯ:*
-              <input class="person__input" type="text" value="Барсик" required>
+            <legend class="form__title visually-hidden secondary-title">Персональные данные питомца.</legend>
+            <label class="person__title form-text form-text--light">ИМЯ:*
+              <input class="person__input form-text form-text--light" type="text" value="Барсик" required>
             </label>
-            <label class="person__title primary-text primary-text--light">Вес (кг):*
-              <input class="person__input person__input--number" type="number" value="7" required>
+            <label class="person__title form-text form-text--light">Вес (кг):*
+              <input class="person__input person__input--number form-text form-text--light" type="number" value="7" required>
             </label>
-            <label class="person__title primary-text primary-text--light">Возраст (лет):
+            <label class="person__title form-text form-text--light">Возраст (лет):
               <input class="person__input person__input--number" type="text" value="7">
             </label>
           </fieldset>
           <fieldset class="form__objective objective">
-            <legend class="visually-hidden secondary-title">Цель программы.</legend>
-            <label class="objective__title">
-              <input class="objective__input objective__input--checked primary-text primary-text--dark" type="radio"
+            <legend class="form__title visually-hidden secondary-title">Цель программы.</legend>
+            <label class="objective__title form-text">
+              <input class="objective__input objective__input--checked" type="radio"
                 name="objective" value="slimming" checked>Похудение
             </label>
-            <label class="objective__title">
-              <input class="objective__input primary-text primary-text--dark" type="radio" name="objective"
+            <label class="objective__title form-text">
+              <input class="objective__input" type="radio" name="objective"
                 value="weight gain">Набор массы
             </label>
-            <label class="objective__title">
-              <input class="objective__input primary-text primary-text--dark" type="radio" name="objective"
+            <label class="objective__title form-text">
+              <input class="objective__input" type="radio" name="objective"
                 value="need advice">Не знаю (Нужен ваш совет)
             </label>
           </fieldset>
           <fieldset class="form__contacts contacts">
-            <legend class="contacts__field-name secondary-title">Контактные данные (владельца кота)</legend>
-            <label class="contacts__title primary-text primary-text--light">E-mail:*
-              <input class="contacts__input contacts__input--email" type="email" value="kuklachev@gmail.com" required>
+            <legend class="form__title contacts__field-name secondary-title">Контактные данные (владельца кота)</legend>
+            <label class="contacts__title form-text form-text--light">E-mail:*
+              <input class="contacts__input contacts__input--email form-text form-text--light" type="email" value="kuklachev@gmail.com" required>
             </label>
-            <label class="contacts__title primary-text primary-text--light">Телефон:*
-              <input class="contacts__input contacts__input--phone" type="tel" value="8 (960) 900-60-90" required>
+            <label class="contacts__title form-text form-text--light">Телефон:*
+              <input class="contacts__input contacts__input--phone form-text form-text--light" type="tel" value="8 (960) 900-60-90" required>
             </label>
           </fieldset>
           <fieldset class="form__comment comment">
-            <legend class="comment__field-name secondary-title">Комментарий</legend>
-            <textarea class="comment__input primary-text primary-text--light"
-              name="comment">Расскажите обо всех повАдках кота</textarea>
+            <legend class="form__title comment__field-name secondary-title">Комментарий</legend>
+            <textarea class="comment__input form-text form-text--light form-text form-text--light"
+              name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="form__additionally additionally">
-            <legend class="additionally__field-name secondary-title">Дополнительно</legend>
-            <label class="additionally__title">
-              <input class="additionally__input primary-text" type="checkbox" name="sweetener" checked>Сахарозаменитель
+            <legend class="form__title additionally__field-name secondary-title">Дополнительно</legend>
+            <label class="additionally__title form-text">
+              <input class="additionally__input" type="checkbox" name="sweetener" checked>Сахарозаменитель
             </label>
-            <label class="additionally__title">
-              <input class="additionally__input primary-text" type="checkbox" name="water">Питьевая вода
+            <label class="additionally__title form-text">
+              <input class="additionally__input" type="checkbox" name="water">Питьевая вода
             </label>
-            <label class="additionally__title">
-              <input class="additionally__input primary-text" type="checkbox" name="milk">Молоко
+            <label class="additionally__title form-text">
+              <input class="additionally__input" type="checkbox" name="milk">Молоко
             </label>
-            <label class="additionally__title">
-              <input class="additionally__input primary-text" type="checkbox" name="vitamins">Витамины
+            <label class="additionally__title form-text">
+              <input class="additionally__input" type="checkbox" name="vitamins">Витамины
             </label>
           </fieldset>
           <div>
