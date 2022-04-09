@@ -1,5 +1,5 @@
 .header-navigation {
-  display: flex;
+  display: none;
 }
 
 .header-navigation__list {
@@ -40,8 +40,8 @@
   text-underline-offset: 8px;
 }
 
-//*Прячет навигацию
+//*Открывает навигацию
 
-// .header__navigation--hidden {
-//   display: none;
-// }
+.header__navigation--opened-menu {
+  display: flex;
+}
