@@ -26,6 +26,27 @@
   padding: 28px 0 25px;
   margin: 0;
   margin-bottom: 26px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: $reserve-color-1;
+    top: 0;
+    left: -20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: $reserve-color-1;
+    bottom: 0;
+    left: -20px;
+  }
 }
 
 .form__contacts {
