@@ -2,16 +2,32 @@
 }
 
 .product-info__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: 400;
+  color: $text-dark-lighter-2;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .product-info__description-list {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-dark-lighter-1;
+  font-family: $third-font-family;
 }
 
 .product-info__description-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-info__description-name {
 }
 
 .product-info__description-value {
+  margin: 0;
 }
