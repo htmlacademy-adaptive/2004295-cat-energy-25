@@ -12,6 +12,21 @@
   padding: 13px 15px 14px;
   border: 1px solid $reserve-color-2;
   box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border-color: $reserve-color-3;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 1px $text-dark-lighter-1;
+    border-color: $text-dark-lighter-1;
+  }
+
+  &:invalid {
+    box-shadow: inset 0 0 0 1px $error-color;
+    border-color: $error-color;
+  }
 }
 
 .person__input--name {

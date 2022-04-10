@@ -24,6 +24,14 @@
     background-repeat: no-repeat;
     background-position: 50%;
   }
+
+  &:hover + .additionally__checkbox-mark {
+    border-color: $reserve-color-5;
+  }
+
+  &:disabled + .additionally__checkbox-mark {
+    opacity: 0.3;
+  }
 }
 
 .additionally__checkbox-mark {
