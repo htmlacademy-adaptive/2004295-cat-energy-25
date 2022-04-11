@@ -18,22 +18,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-product {
-    display: flex;
-    flex-direction: column;
-  }
-
   .main-product__title {
-    margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 41px;
     color: $background-dark;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .main-product__slogan {
-    text-transform: uppercase;
-    color: $text-dark-1;
-    font-size: 14px;
-    line-height: 14px;
-    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: $background-dark;
   }
 }
