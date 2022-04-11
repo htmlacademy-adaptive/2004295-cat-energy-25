@@ -1,3 +1,4 @@
+//*Colors
 $primary-color: #68b738;
 $primary-color-dark: #5eaa2f;
 
@@ -21,8 +22,16 @@ $reserve-color-5: #bababa;
 
 $error-color: #ff8282;
 
+//*Indents
 $base-indent: 20px;
+$base-indent-tablet: 30px;
 
+//*Fonts
 $primary-font-family: "Oswald Regular", sans-serif;
 $secondary-font-family: "Oswald Medium", sans-serif;
 $third-font-family: "Arial", sans-serif;
+
+//*Viewports
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
