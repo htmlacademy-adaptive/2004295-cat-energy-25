@@ -72,7 +72,9 @@
   }
 }
 
-@media (min-width: 768px) {
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
   .advantage-card--slimming {
     &::before {
       width: 200px;

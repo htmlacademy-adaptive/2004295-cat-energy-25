@@ -32,6 +32,8 @@ img {
   object-fit: contain;
 }
 
+//*Media-tablet
+
 @media (min-width: $tablet-width) {
   .body {
     min-width: 768px;

@@ -82,6 +82,8 @@
   display: none;
 }
 
+//*Media-tablet
+
 @media (min-width: $tablet-width) {
   .header {
     padding: 0 $base-indent-tablet;
