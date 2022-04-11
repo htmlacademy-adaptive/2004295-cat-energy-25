@@ -18,3 +18,18 @@
     margin-bottom: $base-indent;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 0 $base-indent-tablet;
+    margin-bottom: 45px;
+  }
+
+  .advantages__item {
+    padding: 77px 316px 57px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: $base-indent-tablet;
+    }
+  }
+}
