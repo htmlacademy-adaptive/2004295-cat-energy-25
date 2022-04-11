@@ -47,3 +47,42 @@
   line-height: 18px;
   padding: 11px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-presentation {
+    padding: 0 $base-indent-tablet;
+    margin-bottom: 0;
+    text-align: start;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .product-presentation__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-presentation__description {
+    z-index: 1;
+    margin-bottom: 29px;
+    color: $background-dark;
+  }
+
+  .product-presentation__image {
+    z-index: 1;
+    margin-bottom: 3px;
+  }
+
+  .product-presentation__link {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px;
+  }
+}
+
