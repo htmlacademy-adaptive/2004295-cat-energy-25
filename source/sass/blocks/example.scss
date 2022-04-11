@@ -6,3 +6,17 @@
 .example__article {
   margin-bottom: 40px;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: inherit;
+    padding: 0 $base-indent-tablet;
+    margin-bottom: 61px;
+  }
+
+  .example__article {
+    margin-bottom: 72px;
+  }
+}
