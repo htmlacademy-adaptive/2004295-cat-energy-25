@@ -1,0 +1,25 @@
+.primary-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.primary-title--light {
+  color: $text-light;
+}
+
+.primary-title--big {
+  line-height: 40px;
+}
+
+.form-text {
+  font-family: $primary-font-family;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-text--light {
+  color: $text-dark-lighter-1;
+}

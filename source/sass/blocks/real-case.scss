@@ -1,0 +1,26 @@
+.real-case__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.real-case__description {
+  margin: 0;
+  margin-bottom: $base-indent;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-dark-lighter-1;
+  font-family: $third-font-family;
+  font-weight: 400;
+}
+
+.real-case__values {
+  margin: 0;
+  margin-bottom: $base-indent;
+}
+
+.real-case__result {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+}

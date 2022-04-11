@@ -1,0 +1,24 @@
+.comment__field-name {
+  margin-bottom: 38px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $primary-color;
+    height: 2px;
+    width: 160px;
+    right: -180px;
+    top: 15px;
+  }
+}
+
+.comment__input {
+  font-family: inherit;
+  padding: 9px 12px 9px 15px;
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid $reserve-color-2;
+}

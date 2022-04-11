@@ -1,1 +1,43 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/typography.scss";
+@import "global/buttons.scss";
+@import "global/logo.scss";
+
+//*Index.html
+@import "blocks/header.scss";
+@import "blocks/header-navigation.scss";
+@import "blocks/main.scss";
+@import "blocks/product-presentation.scss";
+@import "blocks/main-product.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantage-card.scss";
+@import "blocks/instructions.scss";
+@import "blocks/example.scss";
+@import "blocks/real-case.scss";
+@import "blocks/values-list.scss";
+@import "blocks/main-slider.scss";
+@import "blocks/partnership.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";
+
+//*Form.html
+@import "blocks/search-form.scss";
+@import "blocks/form.scss";
+@import "blocks/person.scss";
+@import "blocks/objective.scss";
+@import "blocks/contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/additionally.scss";
+
+//*Catalog.html
+@import "blocks/catalog.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/catalog-card.scss";
+@import "blocks/product-info.scss";
+@import "blocks/show-more-card.scss";
+@import "blocks/extra-products.scss";
+@import "blocks/another-list.scss";
+@import "blocks/offer.scss";

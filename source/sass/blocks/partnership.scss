@@ -1,0 +1,30 @@
+.partnership {
+  padding: 26px $base-indent;
+  background-color: $secondary-color;
+}
+
+.partnership--light {
+  background-color: $background-light;
+}
+
+.partnership__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partnership__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-dark-2;
+  text-transform: uppercase;
+}
+
+.partnership__description {
+  font-family: $third-font-family;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-dark-lighter-1;
+  margin: 0;
+}

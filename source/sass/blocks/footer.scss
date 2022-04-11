@@ -1,0 +1,34 @@
+.footer {
+  padding: 0 $base-indent;
+  background-color: $secondary-color;
+}
+
+.logo-text--footer {
+  display: flex;
+  justify-content: center;
+  padding: 39px 0 31px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+  cursor: pointer;
+}
+
+.footer__socials-list {
+  display: flex;
+  justify-content: center;
+  padding: 22px 0 21px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}

@@ -1,0 +1,48 @@
+.logo-text__image {
+  path:last-child {
+    fill: $text-dark-2;
+  }
+}
+
+.logo-icon {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer-logo {
+  &:hover .footer-logo__icon-path {
+    fill: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__text {
+  text-decoration: none;
+  color: $text-dark-lighter-1;
+}
+
+.footer-logo__icon {
+  display: flex;
+}

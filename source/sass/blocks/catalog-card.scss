@@ -1,0 +1,17 @@
+.catalog-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.catalog-card__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.catalog-card__button {
+  grid-column: 1/3;
+  padding: 10px;
+}

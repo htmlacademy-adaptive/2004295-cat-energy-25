@@ -1,0 +1,32 @@
+.values-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px;
+  column-gap: 32px;
+}
+
+.values-list__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #cdcdcd;
+}
+
+.values-list__indicator {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 7.53px;
+}
+
+.values-list__title {
+  font-family: $third-font-family;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-dark-lighter-1;
+  text-transform: lowercase;
+  padding: 0 14px;
+}

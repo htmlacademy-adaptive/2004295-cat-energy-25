@@ -1,0 +1,41 @@
+.another-list__item {
+  border-top: 1px solid $reserve-color-3;
+  padding: 13px 0 19px;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    border-bottom: 1px solid $reserve-color-3;
+  }
+}
+
+.another-list__header {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $text-dark-lighter-2;
+}
+
+.another-list__description {
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $third-font-family;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-dark-lighter-1;
+}
+
+.another-list__value {
+  margin: 0;
+}
+
+.another-list__button {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}

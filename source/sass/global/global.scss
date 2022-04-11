@@ -1,0 +1,33 @@
+.html {
+  height: 100%;
+}
+
+.body {
+  margin: 0;
+  height: 100%;
+  min-width: 320px;
+
+  font-family: $primary-font-family;
+  font-weight: 400;
+  color: $text-dark-1;
+}
+
+.body__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 320px;
+
+  background-color: $background-light;
+  position: relative;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}

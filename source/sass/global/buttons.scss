@@ -1,0 +1,32 @@
+.primary-button {
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-light;
+  border: none;
+  background-color: $primary-color;
+  text-align: center;
+
+  &:hover {
+    background-color: $primary-color-dark;
+  }
+
+  &:active {
+    background-color: $primary-color-dark;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.primary-button--light {
+  background-color: $secondary-color;
+  color: $text-dark-lighter-1;
+
+  &:hover {
+    background-color: $reserve-color-4;
+  }
+
+  &:active {
+    background-color: $reserve-color-4;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
