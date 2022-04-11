@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 //*Навигация
@@ -64,9 +65,9 @@
 
 //*Прячет кнопку открытия
 
-.header__toggle-button--open-hidden {
-  display: none;
-}
+// .header__toggle-button--open-hidden {
+//   display: none;
+// }
 
 .header__toggle-button--close {
   display: block;
@@ -77,6 +78,28 @@
 
 //*Прячет кнопку закрытия
 
-// .header__toggle-button--close-hidden {
-//   display: none;
-// }
+.header__toggle-button--close-hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 0 $base-indent-tablet;
+    min-height: 105px;
+    margin-bottom: 35px;
+  }
+
+  .header__wrapper {
+    justify-content: start;
+  }
+
+  .header__navigation {
+    position: static;
+    width: auto;
+    margin-left: auto;
+  }
+
+  .header__toggle-button {
+    display: none;
+  }
+}

@@ -6,6 +6,7 @@
 .main-product__title {
   margin: 0;
   margin-bottom: 25px;
+  color: $background-light;
 }
 
 .main-product__slogan {
@@ -14,4 +15,25 @@
   font-size: 14px;
   line-height: 14px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-product__title {
+    margin: 0;
+    margin-bottom: 25px;
+    color: $background-dark;
+  }
+
+  .main-product__slogan {
+    text-transform: uppercase;
+    color: $text-dark-1;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+  }
 }
