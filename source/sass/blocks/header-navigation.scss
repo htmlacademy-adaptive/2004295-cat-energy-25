@@ -45,3 +45,33 @@
 .header__navigation--opened-menu {
   display: flex;
 }
+
+@media (min-width: $tablet-width) {
+  .header-navigation {
+    display: block;
+  }
+
+  .header-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  .header-navigation__item {
+    border-top: none;
+    padding: 0;
+  }
+
+  .header-navigation__link {
+    font-family: $primary-font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .header-navigation__link--current {
+    text-underline-offset: 10px;
+  }
+}
+
