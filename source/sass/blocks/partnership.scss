@@ -55,3 +55,24 @@
     justify-content: space-between;
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .partnership {
+    padding: 56px 80px;
+    position: absolute;
+    transform: translate(110px, 95px);
+    max-width: 565px;
+    box-sizing: border-box;
+  }
+
+  .partnership__wrapper {
+    grid-template-columns: 163px 155px;
+    column-gap: 87px;
+  }
+
+  .partnership__description {
+    text-align: left;
+  }
+}

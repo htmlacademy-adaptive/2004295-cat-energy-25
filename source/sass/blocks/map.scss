@@ -22,3 +22,11 @@
     height: 400px;
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .map__frame {
+    width: 1440px;
+  }
+}
