@@ -48,18 +48,30 @@
 //*Media-tablet
 
 @media (min-width: $tablet-width) {
-  .main-slider {
-    &::before {
-      position: absolute;
-      content: "";
-      width: 768px;
-      height: 462px;
-      background-color: $secondary-color-dark;
-      bottom: -62px;
-      left: -30px;
-    }
+  .main-slider__image-wrapper {
+    margin-bottom: 29px;
   }
 
+  .main-slider__range-form {
+    grid-template-columns: 49px 426px 49px;
+    column-gap: 23px;
+  }
+
+  .main-slider__range-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-slider__range {
+    height: 6px;
+    border: none;
+    background-color: $reserve-color-6;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
   .main-slider__image-wrapper {
     margin-bottom: 29px;
   }

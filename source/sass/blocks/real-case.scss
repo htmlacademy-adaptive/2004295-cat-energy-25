@@ -31,8 +31,9 @@
   font-size: 14px;
   line-height: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 //*Media-tablet
@@ -63,7 +64,40 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: auto;
-    max-width: 174px;
-    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 9px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .real-case__title {
+    margin: 43px 0 146px;
+  }
+
+  .real-case__description {
+    margin-bottom: 69px;
+  }
+
+  .real-case__values-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .real-case__values {
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .real-case__result {
+    margin-left: 0;
+    flex-direction: row;
+
+    & span {
+      padding-left: 63px;
+    }
   }
 }

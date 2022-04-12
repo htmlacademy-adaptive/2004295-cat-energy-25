@@ -62,3 +62,18 @@
     padding: 0 15px;
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .values-list {
+    display: flex;
+    gap: 0;
+  }
+
+  .values-list__wrapper {
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+}
