@@ -37,3 +37,27 @@
     }
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding: 0 $base-indent-desktop;
+    margin-bottom: 71px;
+  }
+
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+
+  .advantages__item {
+    padding: 77px 52px 59px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

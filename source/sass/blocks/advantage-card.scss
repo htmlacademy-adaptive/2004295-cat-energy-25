@@ -118,3 +118,35 @@
     line-height: 30px;
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .advantage-card--slimming {
+    &::before {
+      width: 100px;
+      height: 106px;
+      left: 0;
+      top: -41px;
+      background-size: 100px 106px;
+    }
+  }
+
+  .advantage-card--mass {
+    &::before {
+      width: 134px;
+      height: 100px;
+      left: 0;
+      top: -41px;
+      background-size: 134px 100px;
+    }
+  }
+
+  .advantage-card__header {
+    margin: 0 0 73px 162px;
+  }
+
+  .advantage-card__description {
+    margin-bottom: 27px;
+  }
+}
