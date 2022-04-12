@@ -8,7 +8,7 @@
 .main-product__title {
   margin: 0;
   margin-bottom: 25px;
-  color: $background-light;
+  color: $text-light;
 }
 
 .main-product__slogan {
@@ -23,8 +23,8 @@
 
 @media (min-width: $tablet-width) {
   .main-product__title {
-    margin-bottom: 41px;
-    color: $background-dark;
+    margin-bottom: 40px;
+    color: $text-dark-1;
     font-size: 60px;
     line-height: 60px;
   }
@@ -32,6 +32,6 @@
   .main-product__slogan {
     font-size: 20px;
     line-height: 20px;
-    color: $background-dark;
+    color: $text-dark-1;
   }
 }

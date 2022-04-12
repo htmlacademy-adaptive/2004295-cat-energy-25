@@ -65,6 +65,7 @@
   .header-navigation__item {
     border-top: none;
     padding: 0;
+    background-color: transparent;
   }
 
   .header-navigation__link {
@@ -76,5 +77,24 @@
 
   .header-navigation__link--current {
     text-underline-offset: 10px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .header-navigation__list {
+    width: 478px;
+  }
+
+  .header-navigation__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-light;
+  }
+
+  .header-navigation__link--current {
+    text-underline-offset: 6px;
+    text-decoration-color: $text-light;
   }
 }

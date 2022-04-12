@@ -43,3 +43,15 @@ img {
     width: 768px;
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .body {
+    min-width: 1440px;
+  }
+
+  .body__wrapper {
+    width: 1440px;
+  }
+}
