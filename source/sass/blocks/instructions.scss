@@ -147,9 +147,9 @@
   }
 }
 
-//*Media-tablet
+//*Media-desktop
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .instructions {
     padding: 0 $base-indent-desktop;
     margin-bottom: 26px;
