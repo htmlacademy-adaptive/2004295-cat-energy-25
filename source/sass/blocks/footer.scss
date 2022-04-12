@@ -63,3 +63,12 @@
     padding: 0;
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 0 $base-indent-desktop;
+    min-height: 149px;
+  }
+}
