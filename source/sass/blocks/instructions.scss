@@ -146,3 +146,17 @@
     position: relative;
   }
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .instructions {
+    padding: 0 $base-indent-desktop;
+    margin-bottom: 26px;
+  }
+
+  .instructions__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 77px;
+  }
+}
