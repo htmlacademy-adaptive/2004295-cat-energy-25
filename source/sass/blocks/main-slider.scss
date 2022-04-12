@@ -72,23 +72,9 @@
 //*Media-desktop
 
 @media (min-width: $desktop-width) {
-  .main-slider__image-wrapper {
-    margin-bottom: 29px;
-  }
-
-  .main-slider__range-form {
-    grid-template-columns: 49px 426px 49px;
-    column-gap: 23px;
-  }
-
-  .main-slider__range-label {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .main-slider__range {
-    height: 6px;
-    border: none;
-    background-color: $reserve-color-6;
+  .main-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
