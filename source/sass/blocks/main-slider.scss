@@ -1,8 +1,15 @@
+//*Слайдер в блоке Живой пример (index)
+
+.main-slider {
+  position: relative;
+}
+
 .main-slider__image-wrapper {
   display: flex;
   align-items: center;
   overflow: hidden;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .main-slider__range-form {
@@ -12,6 +19,7 @@
   column-gap: 13px;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .main-slider__range-label {
@@ -32,8 +40,41 @@
   margin: 0;
   appearance: none;
   cursor: pointer;
-  width: 85px;
   height: 14px;
   border: 1px solid $reserve-color-3;
   border-radius: 6px;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .main-slider__image-wrapper {
+    margin-bottom: 29px;
+  }
+
+  .main-slider__range-form {
+    grid-template-columns: 49px 426px 49px;
+    column-gap: 23px;
+  }
+
+  .main-slider__range-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-slider__range {
+    height: 6px;
+    border: none;
+    background-color: $reserve-color-6;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .main-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

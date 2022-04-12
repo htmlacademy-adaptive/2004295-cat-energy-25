@@ -1,3 +1,5 @@
+//*Шапка
+
 .header {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 //*Навигация
@@ -64,9 +67,9 @@
 
 //*Прячет кнопку открытия
 
-.header__toggle-button--open-hidden {
-  display: none;
-}
+// .header__toggle-button--open-hidden {
+//   display: none;
+// }
 
 .header__toggle-button--close {
   display: block;
@@ -77,6 +80,41 @@
 
 //*Прячет кнопку закрытия
 
-// .header__toggle-button--close-hidden {
-//   display: none;
-// }
+.header__toggle-button--close-hidden {
+  display: none;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 0 $base-indent-tablet;
+    min-height: 105px;
+    margin-bottom: 35px;
+  }
+
+  .header__wrapper {
+    justify-content: start;
+  }
+
+  .header__navigation {
+    position: static;
+    width: auto;
+    margin-left: auto;
+  }
+
+  .header__toggle-button {
+    display: none;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding: 0 $base-indent-desktop;
+    min-height: 114px;
+    margin-bottom: 0;
+    margin-top: 27px;
+  }
+}

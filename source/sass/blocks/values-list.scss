@@ -1,3 +1,5 @@
+//*Показатели в Живом примере (index)
+
 .values-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -28,5 +30,50 @@
   line-height: 12px;
   color: $text-dark-lighter-1;
   text-transform: lowercase;
-  padding: 0 14px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .values-list {
+    display: flex;
+    gap: 0;
+  }
+
+  .values-list__wrapper {
+    width: 162px;
+
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+
+  .values-list__indicator {
+    font-size: 30px;
+    line-height: 37px;
+    margin: 15px 0 11px;
+  }
+
+  .values-list__title {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 15px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .values-list {
+    display: flex;
+    gap: 0;
+  }
+
+  .values-list__wrapper {
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
 }

@@ -1,3 +1,5 @@
+//*Живой пример (index)
+
 .example {
   background-color: $secondary-color-dark;
   padding: 25px $base-indent 40px;
@@ -5,4 +7,54 @@
 
 .example__article {
   margin-bottom: 40px;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: inherit;
+    padding: 0 $base-indent-tablet 61px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 768px;
+      height: 462px;
+      background-color: $secondary-color-dark;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .example__article {
+    margin-bottom: 72px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding: 0 $base-indent-desktop 71px;
+    display: grid;
+    grid-template-columns: 436px 592px;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1440px;
+      height: 462px;
+      background-color: $secondary-color;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .example__article {
+    margin-bottom: 0;
+  }
 }

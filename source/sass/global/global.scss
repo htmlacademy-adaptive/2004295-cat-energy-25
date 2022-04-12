@@ -31,3 +31,27 @@ img {
   max-width: 100%;
   object-fit: contain;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .body {
+    min-width: 768px;
+  }
+
+  .body__wrapper {
+    width: 768px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .body {
+    min-width: 1440px;
+  }
+
+  .body__wrapper {
+    width: 1440px;
+  }
+}
