@@ -16,3 +16,38 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .search-form {
+    padding: 33px $base-indent-tablet 72px;
+    border-top: none;
+  }
+
+  .search-form__title {
+    margin-bottom: 54px;
+  }
+
+  .search-form__subtitle {
+    margin-bottom: 39px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .search-form {
+    padding: 19px $base-indent-desktop 82px;
+  }
+
+  .search-form__title {
+    margin-bottom: 56px;
+  }
+
+  .search-form__subtitle {
+    margin-bottom: 66px;
+  }
+}
