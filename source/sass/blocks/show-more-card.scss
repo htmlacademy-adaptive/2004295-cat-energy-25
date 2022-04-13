@@ -5,6 +5,7 @@
   flex-direction: column;
   text-align: center;
   padding-top: 25px;
+  z-index: 1;
 }
 
 .show-more-card__description {
@@ -48,12 +49,20 @@
 //*Media-tablet
 
 @media (min-width: $tablet-width) {
-  // .show-more-card {
-  //   display: flex;
-  //   flex-direction: column;
-  //   text-align: center;
-  //   padding-top: 25px;
-  // }
+  .show-more-card {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 430px;
+      width: 100%;
+      background-color: transparent;
+      border: 2px solid $secondary-color;
+      bottom: 0;
+      left: 0;
+    }
+  }
 
   .show-more-card__description {
     margin: 49px auto 87px;
