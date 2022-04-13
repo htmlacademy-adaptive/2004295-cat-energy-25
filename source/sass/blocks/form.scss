@@ -146,10 +146,42 @@
 
   .form__contacts {
     margin-bottom: 65px;
+
+    &::before {
+      width: 30px;
+      left: -69px;
+      top: -88px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $primary-color;
+      height: 2px;
+      width: 145px;
+      right: -65px;
+      top: -88px;
+    }
   }
 
   .form__comment {
     margin-bottom: 65px;
+
+    &::after {
+      width: 30px;
+      left: -69px;
+      top: -88px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $primary-color;
+      height: 2px;
+      width: 145px;
+      right: -65px;
+      top: -88px;
+    }
   }
 
   .form__additionally {
