@@ -250,6 +250,10 @@
   }
 
   .form__contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+
     &::before {
       width: 70px;
       left: -110px;
