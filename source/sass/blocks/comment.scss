@@ -13,3 +13,16 @@
   resize: none;
   border: 1px solid $reserve-color-2;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .comment__field-name {
+    margin-bottom: 76px;
+  }
+
+  .comment__input {
+    padding: 10px 19px;
+    min-height: 174px;
+  }
+}
