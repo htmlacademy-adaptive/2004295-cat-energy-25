@@ -42,6 +42,7 @@
   border: 1px solid $reserve-color-3;
   bottom: -7px;
   left: -45px;
+  box-sizing: border-box;
 }
 
 //*Media-tablet
@@ -78,5 +79,14 @@
 
     bottom: -7px;
     left: -59px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .additionally__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
