@@ -18,6 +18,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: $text-dark-2;
 }
 
 .show-more-card__subtitle {
@@ -40,4 +41,39 @@
 
 .show-more-card__button-2 {
   padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  // .show-more-card {
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: center;
+  //   padding-top: 25px;
+  // }
+
+  .show-more-card__description {
+    margin: 49px auto 87px;
+    max-width: 167px;
+  }
+
+  .show-more-card__title {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .show-more-card__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .show-more-card__button-1 {
+    width: 60px;
+    height: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='15' x2='15' y2='30' stroke='%23D3D3D3' stroke-width='2'/%3E%3Cline x1='30' y1='15' y2='15' stroke='%23D3D3D3' stroke-width='2'/%3E%3C/svg%3E%0A");
+  }
 }
