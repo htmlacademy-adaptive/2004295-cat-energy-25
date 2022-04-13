@@ -9,3 +9,17 @@
 .catalog__title {
   margin: 27px 0 41px;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 $base-indent-tablet;
+    border-top: none;
+    margin-bottom: 68px;
+  }
+
+  .catalog__title {
+    margin: 33px 0 82px;
+  }
+}
