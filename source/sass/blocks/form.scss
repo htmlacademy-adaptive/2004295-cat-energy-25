@@ -55,18 +55,51 @@
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $primary-color;
+    height: 2px;
+    width: 100px;
+    right: -$base-indent;
+    top: -69px;
+  }
 }
 
 .form__comment {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $primary-color;
+    height: 2px;
+    width: 160px;
+    right: -$base-indent;
+    top: -47px;
+  }
 }
 
 .form__additionally {
   margin: 0;
   margin-bottom: 41px;
   padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $primary-color;
+    height: 2px;
+    width: 136px;
+    right: -$base-indent;
+    top: -48px;
+  }
 }
 
 .form__buttons {
@@ -77,6 +110,8 @@
 .form__submit-button {
   padding: 7px;
   margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__notice {
