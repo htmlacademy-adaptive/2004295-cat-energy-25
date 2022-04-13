@@ -85,3 +85,64 @@
   font-family: $third-font-family;
   text-align: center;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__person {
+    margin-bottom: 72px;
+  }
+
+  .form__objective {
+    padding: $base-indent-tablet;
+    margin-bottom: 75px;
+    position: static;
+  }
+
+  .form__contacts {
+    margin-bottom: 65px;
+  }
+
+  .form__comment {
+    margin-bottom: 65px;
+  }
+
+  .form__additionally {
+    margin-bottom: 54px;
+  }
+
+  .form__buttons {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    column-gap: 61px;
+    align-items: center;
+  }
+
+  .form__submit-button {
+    padding: 13px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .form__notice {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+
+}

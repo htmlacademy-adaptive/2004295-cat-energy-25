@@ -42,3 +42,35 @@
 .person__input--age {
   width: 172px;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .person__label {
+    &:not(:last-child) {
+      margin-bottom: $base-indent;
+    }
+  }
+
+  .person__input {
+    padding: 10.4px 20px 11.6px;
+  }
+
+  .person__input--name {
+    width: 567px;
+  }
+
+  .person__input--weight {
+    width: 536px;
+  }
+
+  .person__input--age {
+    width: 497px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+
+}
