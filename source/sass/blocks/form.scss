@@ -227,5 +227,69 @@
 //*Media-desktop
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .form__person-objective-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    margin-bottom: 65px;
+  }
+
+  .form__person {
+    margin-bottom: 0;
+  }
+
+  .form__objective {
+    padding: $base-indent-tablet 28px;
+    margin-bottom: 0;
+    position: static;
+  }
+
+  .form__contacts {
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 778px;
+      right: -110px;
+    }
+  }
+
+  .form__comment {
+    &::after {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::before {
+      width: 1108px;
+      right: -110px;
+    }
+  }
+
+  .form__additionally {
+    margin-bottom: 66px;
+
+    &::after {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::before {
+      width: 1078px;
+      right: -110px;
+    }
+  }
+
+  .form__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
 }

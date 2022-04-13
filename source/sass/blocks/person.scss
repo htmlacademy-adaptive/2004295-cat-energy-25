@@ -72,5 +72,15 @@
 //*Media-desktop
 
 @media (min-width: $desktop-width) {
+  .person__input--name {
+    width: 506px;
+  }
 
+  .person__input--weight {
+    width: 475px;
+  }
+
+  .person__input--age {
+    width: 436px;
+  }
 }

@@ -39,6 +39,7 @@
   border-radius: 50%;
   bottom: -7px;
   left: -45px;
+  box-sizing: border-box;
 }
 
 //*Media-tablet
@@ -64,9 +65,4 @@
     height: 40px;
     left: -60px;
   }
-}
-
-//*Media-desktop
-
-@media (min-width: $desktop-width) {
 }
