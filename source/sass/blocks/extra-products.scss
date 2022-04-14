@@ -21,6 +21,7 @@
   margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 .extra-products__list {
@@ -57,5 +58,27 @@
     margin-left: 37px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .extra-products {
+    padding: 0 $base-indent-desktop;
+    margin-bottom: 0;
+
+    &::after {
+      width: 957px;
+    }
+
+    &::before {
+      width: 70px;
+      left: 0;
+    }
+  }
+
+  .extra-products__title {
+    margin-left: 0;
   }
 }
