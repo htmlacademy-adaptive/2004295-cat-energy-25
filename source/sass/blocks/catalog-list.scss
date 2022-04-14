@@ -59,3 +59,22 @@
     }
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 62px;
+  }
+
+  .catalog-list__item {
+    padding: 0 38px 40px 39px;
+
+    &::before {
+      height: 431px;
+    }
+  }
+}

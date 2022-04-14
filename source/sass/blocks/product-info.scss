@@ -51,3 +51,11 @@
     border-bottom: 1px solid $reserve-color-3;
   }
 }
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .product-info__title {
+    line-height: 21px;
+  }
+}
