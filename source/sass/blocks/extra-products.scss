@@ -11,7 +11,7 @@
     background-color: $primary-color;
     height: 2px;
     width: 53px;
-    right: -$base-indent;
+    right: 0;
     top: 15px;
   }
 }
@@ -38,7 +38,6 @@
 
     &::after {
       width: 328px;
-      right: 0;
       top: 22px;
     }
 
