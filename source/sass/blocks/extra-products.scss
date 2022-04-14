@@ -64,9 +64,17 @@
 //*Media-desktop
 
 @media (min-width: $desktop-width) {
+  .extra-products__wrapper {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    column-gap: 80px;
+    margin-bottom: 86px;
+  }
+
   .extra-products {
     padding: 0 $base-indent-desktop;
     margin-bottom: 0;
+    position: relative;
 
     &::after {
       width: 957px;

@@ -1,5 +1,9 @@
 //*Список доп. товаров (catalog)
 
+.another-list {
+  margin-bottom: 35px;
+}
+
 .another-list__item {
   border-top: 1px solid $reserve-color-3;
   padding: 13px 0 19px;
@@ -79,7 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .another-list {
-    max-width: 73.5%;
+    margin-bottom: 0;
   }
 
   .another-list__item {
@@ -95,7 +99,7 @@
       border-bottom: 1px solid $reserve-color-3;
     }
 
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
   }
 
   .another-list__description {
