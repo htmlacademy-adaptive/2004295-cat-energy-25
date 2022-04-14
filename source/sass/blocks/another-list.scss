@@ -41,3 +41,36 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .another-list__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 25px;
+    border: 1px solid $reserve-color-3;
+    border-bottom: none;
+    padding: 26px 38px 28px;
+  }
+
+  .another-list__header {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .another-list__description {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: right;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .another-list__button {
+    grid-column: 1/3;
+  }
+}

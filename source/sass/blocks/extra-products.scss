@@ -1,8 +1,19 @@
 //*Дополнительные товары (catalog)
 
 .extra-products {
-  padding: 0 20px;
+  padding: 0 $base-indent;
   margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $primary-color;
+    height: 2px;
+    width: 53px;
+    right: -$base-indent;
+    top: 15px;
+  }
 }
 
 .extra-products__title {
@@ -16,4 +27,36 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .extra-products {
+    padding: 0 $base-indent-tablet;
+    margin-bottom: 69px;
+
+    &::after {
+      width: 328px;
+      right: 0;
+      top: 22px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $primary-color;
+      height: 2px;
+      width: 30px;
+      left: 0;
+      top: 22px;
+    }
+  }
+
+  .extra-products__title {
+    margin-bottom: 80px;
+    margin-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
