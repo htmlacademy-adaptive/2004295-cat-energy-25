@@ -5,16 +5,17 @@
 }
 
 .comment__input {
-  font-family: inherit;
   padding: 9px 12px 9px 15px;
   width: 100%;
   min-height: 150px;
+
+  font-family: inherit;
+  border: 1px solid $color-2;
   box-sizing: border-box;
   resize: none;
-  border: 1px solid $reserve-color-2;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .comment__field-name {

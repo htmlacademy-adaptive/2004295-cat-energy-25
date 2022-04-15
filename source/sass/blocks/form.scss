@@ -22,12 +22,14 @@
 }
 
 .form__objective {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 28px 0 25px;
   margin: 0;
   margin-bottom: 26px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   position: relative;
 
   &::before {
@@ -35,9 +37,9 @@
     position: absolute;
     width: 320px;
     height: 1px;
-    background-color: $reserve-color-1;
     top: 0;
     left: -20px;
+    background-color: $color-1;
   }
 
   &::after {
@@ -45,9 +47,9 @@
     position: absolute;
     width: 320px;
     height: 1px;
-    background-color: $reserve-color-1;
     bottom: 0;
     left: -20px;
+    background-color: $color-1;
   }
 }
 
@@ -55,16 +57,17 @@
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
+
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    background-color: $primary-color;
     height: 2px;
     width: 100px;
     right: -$base-indent;
     top: -69px;
+    background-color: $primary-color;
   }
 }
 
@@ -72,16 +75,17 @@
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
+
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    background-color: $primary-color;
     height: 2px;
     width: 160px;
     right: -$base-indent;
     top: -47px;
+    background-color: $primary-color;
   }
 }
 
@@ -89,16 +93,17 @@
   margin: 0;
   margin-bottom: 41px;
   padding: 0;
+
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    background-color: $primary-color;
     height: 2px;
     width: 136px;
     right: -$base-indent;
     top: -48px;
+    background-color: $primary-color;
   }
 }
 
@@ -110,18 +115,19 @@
 .form__submit-button {
   padding: 7px;
   margin-bottom: 21px;
-  font-size: 16px;
+
+  font-size: $primary-fs;
   line-height: 20px;
 }
 
 .form__notice {
-  font-size: 14px;
+  font-size: $third-fs;
   line-height: 16px;
   font-family: $third-font-family;
   text-align: center;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .form {
@@ -131,7 +137,7 @@
 
   .form__title {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 1;
   }
 
   .form__person {
@@ -139,8 +145,9 @@
   }
 
   .form__objective {
-    padding: $base-indent-tablet;
     margin-bottom: 75px;
+    padding: $base-indent-tablet;
+
     position: static;
   }
 
@@ -156,11 +163,11 @@
     &::after {
       content: "";
       position: absolute;
-      background-color: $primary-color;
       height: 2px;
       width: 145px;
       right: -65px;
       top: -88px;
+      background-color: $primary-color;
     }
   }
 
@@ -176,11 +183,11 @@
     &::before {
       content: "";
       position: absolute;
-      background-color: $primary-color;
       height: 2px;
       width: 478px;
       right: -65px;
       top: -88px;
+      background-color: $primary-color;
     }
   }
 
@@ -196,11 +203,11 @@
     &::before {
       content: "";
       position: absolute;
-      background-color: $primary-color;
       height: 2px;
       width: 446px;
       right: -65px;
       top: -74px;
+      background-color: $primary-color;
     }
   }
 
@@ -214,17 +221,18 @@
   .form__submit-button {
     padding: 13px;
     margin-bottom: 0;
-    font-size: 20px;
+
+    font-size: $secondary-fs;
     line-height: 26px;
   }
 
   .form__notice {
-    font-size: 16px;
+    font-size: $primary-fs;
     text-align: left;
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .form {
@@ -233,10 +241,11 @@
   }
 
   .form__person-objective-wrapper {
+    margin-bottom: 65px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
-    margin-bottom: 65px;
   }
 
   .form__person {
@@ -246,6 +255,7 @@
   .form__objective {
     padding: $base-indent-tablet 28px;
     margin-bottom: 0;
+
     position: static;
   }
 

@@ -13,6 +13,7 @@
 .instructions__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -44,17 +45,18 @@
   display: grid;
   grid-template-columns: 60px 1fr;
   column-gap: $base-indent;
+
   position: relative;
 
   &::after {
-    content: "";
     position: absolute;
+    content: "";
     width: 60px;
     height: 60px;
-    background-repeat: no-repeat;
-    background-position: 50%;
     bottom: -3px;
     background-color: $primary-color;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   &:not(:last-child) {
@@ -64,14 +66,16 @@
 
 .instructions__description {
   margin: 0;
-  font-family: $third-font-family;
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-dark-lighter-1;
+
   grid-column: 2/3;
+
+  font-family: $third-font-family;
+  font-size: $third-fs;
+  line-height: 18px;
+  color: $text-light-dark-1;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .instructions {
@@ -81,8 +85,8 @@
 
   .instructions__header {
     margin-bottom: 32px;
-    font-size: 60px;
-    line-height: 60px;
+
+    line-height: 1;
   }
 
   .instructions__list {
@@ -93,16 +97,17 @@
   }
 
   .instructions__item {
-    display: block;
     padding: 151px 0 57px;
+    display: block;
 
     &::before {
       position: absolute;
-      font-size: 280px;
-      line-height: 280px;
       color: $secondary-color;
       top: 0;
       left: 34%;
+
+      font-size: 280px;
+      line-height: 1;
     }
 
     &::after {
@@ -141,13 +146,14 @@
   }
 
   .instructions__description {
-    font-size: 16px;
-    line-height: 24px;
     position: relative;
+
+    font-size: $primary-fs;
+    line-height: 24px;
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .instructions {

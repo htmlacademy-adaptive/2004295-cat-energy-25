@@ -5,10 +5,10 @@
 }
 
 .additionally__label {
+  margin-left: 46px;
   display: block;
   position: relative;
   cursor: pointer;
-  margin-left: 46px;
 
   &:not(:last-child) {
     margin-bottom: 25px;
@@ -27,7 +27,7 @@
   }
 
   &:hover + .additionally__checkbox-mark {
-    border-color: $reserve-color-5;
+    border-color: $color-5;
   }
 
   &:disabled + .additionally__checkbox-mark {
@@ -36,16 +36,18 @@
 }
 
 .additionally__checkbox-mark {
-  position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid $reserve-color-3;
+
+  position: absolute;
   bottom: -7px;
   left: -45px;
+
+  border: 1px solid $color-3;
   box-sizing: border-box;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .additionally__field-name {
@@ -82,7 +84,7 @@
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .additionally__wrapper {

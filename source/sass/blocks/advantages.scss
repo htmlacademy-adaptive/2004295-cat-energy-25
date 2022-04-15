@@ -7,21 +7,23 @@
 
 .advantages__list {
   margin: 0;
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .advantages__item {
-  background-color: $secondary-color;
   padding: $base-indent;
   padding-top: 30px;
+
+  background-color: $secondary-color;
 
   &:not(:last-child) {
     margin-bottom: $base-indent;
   }
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .advantages {
@@ -38,7 +40,7 @@
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .advantages {

@@ -1,30 +1,32 @@
 .primary-title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
   margin: 0;
-}
 
-.primary-title--big {
-  line-height: 40px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .form-text {
-  font-family: $primary-font-family;
-  font-size: 16px;
+  font-size: $primary-fs;
   line-height: 18px;
+  font-family: $primary-font-family;
   text-transform: uppercase;
 }
 
 .form-text--light {
-  color: $text-dark-lighter-1;
+  color: $text-light-dark-1;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
+  .primary-title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
   .form-text {
-    font-size: 20px;
+    font-size: $secondary-fs;
     line-height: 30px;
   }
 }

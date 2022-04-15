@@ -1,25 +1,25 @@
 //*Colors
 $primary-color: #68b738;
-$primary-color-dark: #5eaa2f;
+$primary-color-darker: #5eaa2f;
 
 $secondary-color: #f2f2f2;
-$secondary-color-dark: #eaeaea;
+$secondary-color-darker: #eaeaea;
 
-$background-dark: #000000;
 $background-light: #ffffff;
+$background-dark: #000000;
 
 $text-light: #ffffff;
-$text-dark-1: #000000;
-$text-dark-2: #111111;
-$text-dark-lighter-1: #444444;
-$text-dark-lighter-2: #222222;
+$text-dark: #000000;
+$text-darker: #111111;
+$text-light-dark-1: #444444;
+$text-light-dark-2: #222222;
 
-$reserve-color-1: #d9d9d9;
-$reserve-color-2: #e7e7e7;
-$reserve-color-3: #cdcdcd;
-$reserve-color-4: #ebebeb;
-$reserve-color-5: #bababa;
-$reserve-color-6: #dcdcdc;
+$color-1: #d9d9d9;
+$color-2: #e7e7e7;
+$color-3: #cdcdcd;
+$color-4: #ebebeb;
+$color-5: #bababa;
+$color-6: #dcdcdc;
 
 $error-color: #ff8282;
 
@@ -27,6 +27,11 @@ $error-color: #ff8282;
 $base-indent: 20px;
 $base-indent-tablet: 30px;
 $base-indent-desktop: 110px;
+
+//*Font-sizes
+$primary-fs: 16px;
+$secondary-fs: 20px;
+$third-fs: 14px;
 
 //*Fonts
 $primary-font-family: "Oswald Regular", sans-serif;

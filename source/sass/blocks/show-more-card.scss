@@ -1,10 +1,12 @@
 //*Карточка Показать еще (catalog)
 
 .show-more-card {
+  padding-top: 25px;
+
   display: flex;
   flex-direction: column;
+
   text-align: center;
-  padding-top: 25px;
   z-index: 1;
 }
 
@@ -15,27 +17,30 @@
 .show-more-card__title {
   margin: 0;
   margin-bottom: 8px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
+
+  font-size: $primary-fs;
   line-height: 20px;
-  color: $text-dark-2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text-darker;
 }
 
 .show-more-card__subtitle {
   margin: 0;
-  font-family: $third-font-family;
-  color: $text-dark-lighter-1;
+
   font-size: 12px;
   line-height: 16px;
+  font-family: $third-font-family;
+  color: $text-light-dark-1;
 }
 
 .show-more-card__button-1 {
-  align-self: center;
-  border: none;
+  padding: 0;
   width: 30px;
   height: 30px;
-  padding: 0;
+
+  align-self: center;
+  border: none;
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='15' x2='15' y2='30' stroke='%23D3D3D3' stroke-width='2'/%3E%3Cline x1='30' y1='15' y2='15' stroke='%23D3D3D3' stroke-width='2'/%3E%3C/svg%3E%0A");
   cursor: pointer;
@@ -43,25 +48,26 @@
 
 .show-more-card__button-2 {
   padding: 10px;
-  font-size: 16px;
+
+  font-size: $primary-fs;
   line-height: 20px;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .show-more-card {
     position: relative;
 
     &::before {
-      content: "";
       position: absolute;
+      content: "";
       height: 430px;
       width: 100%;
-      background-color: transparent;
-      border: 2px solid $secondary-color;
       bottom: 0;
       left: 0;
+      background-color: transparent;
+      border: 2px solid $secondary-color;
     }
   }
 
@@ -72,23 +78,25 @@
 
   .show-more-card__title {
     margin-bottom: 23px;
-    font-size: 20px;
+
+    font-size: $secondary-fs;
     line-height: 23px;
   }
 
   .show-more-card__subtitle {
-    font-size: 16px;
+    font-size: $primary-fs;
     line-height: 18px;
   }
 
   .show-more-card__button-1 {
     width: 60px;
     height: 60px;
+
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='15' x2='15' y2='30' stroke='%23D3D3D3' stroke-width='2'/%3E%3Cline x1='30' y1='15' y2='15' stroke='%23D3D3D3' stroke-width='2'/%3E%3C/svg%3E%0A");
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .show-more-card__title {

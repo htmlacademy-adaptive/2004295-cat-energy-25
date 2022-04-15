@@ -1,6 +1,6 @@
 .logo-text__image {
   path:last-child {
-    fill: $text-dark-2;
+    fill: $text-darker;
   }
 }
 
@@ -39,11 +39,11 @@
 }
 
 .footer-logo__text {
-  text-decoration: none;
-  color: $text-dark-lighter-1;
-  font-family: $third-font-family;
-  font-size: 16px;
+  font-size: $primary-fs;
   line-height: 18px;
+  font-family: $third-font-family;
+  color: $text-light-dark-1;
+  text-decoration: none;
 }
 
 .footer-logo__icon {

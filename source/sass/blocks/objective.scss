@@ -1,11 +1,14 @@
 //*Цель в форме (form)
 
 .objective__label {
-  color: $text-dark-lighter-2;
-  display: block;
-  position: relative;
-  cursor: pointer;
   margin-left: 45px;
+
+  display: block;
+
+  color: $text-light-dark-2;
+  cursor: pointer;
+
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 25px;
@@ -14,6 +17,7 @@
 
 .objective__input {
   position: absolute;
+
   opacity: 0;
   z-index: -1;
 
@@ -23,7 +27,7 @@
   }
 
   &:hover + .objective__checkbox-mark {
-    border-color: $reserve-color-5;
+    border-color: $color-5;
   }
 
   &:disabled + .objective__checkbox-mark {
@@ -35,14 +39,15 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid $reserve-color-3;
-  border-radius: 50%;
   bottom: -7px;
   left: -45px;
+
+  border: 1px solid $color-3;
+  border-radius: 50%;
   box-sizing: border-box;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .objective__label {

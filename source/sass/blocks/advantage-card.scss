@@ -32,41 +32,45 @@
 
 .advantage-card__header {
   margin: 0 0 29px 91px;
-  text-transform: uppercase;
+
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .advantage-card__description {
-  font-family: $third-font-family;
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-dark-lighter-1;
   margin: 0;
   margin-bottom: 15px;
   padding-bottom: 23px;
-  border-bottom: 1px solid $reserve-color-1;
+
+  font-family: $third-font-family;
+  font-size: $third-fs;
+  line-height: 18px;
+  color: $text-light-dark-1;
+
+  border-bottom: 1px solid $color-1;
 }
 
 .advantage-card__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 16px;
-  color: $text-dark-1;
   position: relative;
 
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $primary-fs;
+  line-height: 1;
+  color: $text-dark;
+
   &::after {
-    content: "";
     position: absolute;
+    content: "";
     display: block;
-    background-image: url("data:image/svg+xml,%3Csvg width='24' height='12' viewBox='0 0 24 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
     min-width: 24px;
     min-height: 12px;
     top: 25%;
     right: -50%;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='12' viewBox='0 0 24 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
   }
 
   &:active {
@@ -74,7 +78,7 @@
   }
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .advantage-card--slimming {
@@ -100,26 +104,29 @@
   .advantage-card__header {
     margin: 0;
     margin-bottom: 24px;
+
     font-size: 36px;
-    line-height: 36px;
+    line-height: 1;
   }
 
   .advantage-card__description {
-    font-size: 16px;
-    line-height: 24px;
-    color: $text-dark-1;
     margin-bottom: 52px;
     padding-bottom: 0;
+
+    font-size: $primary-fs;
+    line-height: 24px;
+    color: $text-dark;
+
     border-bottom: none;
   }
 
   .advantage-card__link {
-    font-size: 20px;
+    font-size: $secondary-fs;
     line-height: 30px;
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .advantage-card--slimming {
