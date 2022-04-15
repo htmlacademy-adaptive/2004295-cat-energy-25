@@ -16,3 +16,44 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .search-form {
+    padding: 33px $base-indent-tablet 72px;
+    border-top: none;
+  }
+
+  .search-form__title {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 35px 0 40px;
+  }
+
+  .search-form__subtitle {
+    margin-bottom: 39px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 35px 0 40px;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .search-form {
+    padding: 19px $base-indent-desktop 82px;
+  }
+
+  .search-form__title {
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .search-form__subtitle {
+    margin-bottom: 66px;
+    padding: 0;
+  }
+}

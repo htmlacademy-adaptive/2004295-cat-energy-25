@@ -76,40 +76,42 @@
       <!-- *Search_form -->
       <section class="search-form">
         <h1 class="search-form__title primary-title">Подбор программы</h1>
-        <p class="search-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="search-form__subtitle">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__person person">
-            <legend class="form__title visually-hidden">Персональные данные питомца.</legend>
-            <label class="person__label form-text form-text--light">Имя:*
-              <input class="person__input person__input--name form-text form-text--light" type="text" value="Барсик" required>
-            </label>
-            <label class="person__label form-text form-text--light">Вес (кг):*
-              <input class="person__input person__input--weight person__input--number form-text form-text--light" type="number" value="7" required>
-            </label>
-            <label class="person__label form-text form-text--light">Возраст (лет):
-              <input class="person__input  person__input--age form-text form-text--light" type="text" value="7">
-            </label>
-          </fieldset>
-          <fieldset class="form__objective objective">
-            <legend class="form__title visually-hidden">Цель программы.</legend>
-            <label class="objective__label form-text">
-              <input class="objective__input" type="radio" name="objective" value="slimming" checked>
-              <span class="objective__checkbox-mark"></span>
-              <span>Похудение</span>
-            </label>
-            <label class="objective__label form-text">
-              <input class="objective__input" type="radio" name="objective" value="weight gain">
-              <span class="objective__checkbox-mark"></span>
-              <span>Набор массы</span>
-            </label>
-            <label class="objective__label form-text">
-              <input class="objective__input" type="radio" name="objective" value="need advice">
-              <span class="objective__checkbox-mark"></span>
-              <span>Не знаю (Нужен ваш совет)</span>
-            </label>
-          </fieldset>
+          <div class="form__person-objective-wrapper">
+            <fieldset class="form__person person">
+              <legend class="form__title visually-hidden">Персональные данные питомца.</legend>
+              <label class="person__label form-text form-text--light">Имя:*
+                <input class="person__input person__input--name form-text form-text--light" type="text" value="Барсик" required>
+              </label>
+              <label class="person__label form-text form-text--light">Вес (кг):*
+                <input class="person__input person__input--weight person__input--number form-text form-text--light" type="number" value="7" required>
+              </label>
+              <label class="person__label form-text form-text--light">Возраст (лет):
+                <input class="person__input  person__input--age form-text form-text--light" type="text" value="7">
+              </label>
+            </fieldset>
+            <fieldset class="form__objective objective">
+              <legend class="form__title visually-hidden">Цель программы.</legend>
+              <label class="objective__label form-text">
+                <input class="objective__input" type="radio" name="objective" value="slimming" checked>
+                <span class="objective__checkbox-mark"></span>
+                <span>Похудение</span>
+              </label>
+              <label class="objective__label form-text">
+                <input class="objective__input" type="radio" name="objective" value="weight gain">
+                <span class="objective__checkbox-mark"></span>
+                <span>Набор массы</span>
+              </label>
+              <label class="objective__label form-text">
+                <input class="objective__input" type="radio" name="objective" value="need advice">
+                <span class="objective__checkbox-mark"></span>
+                <span>Не знаю (Нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </div>
           <fieldset class="form__contacts contacts">
-            <legend class="form__title contacts__field-name">Контактные данные <br>(владельца кота)</legend>
+            <legend class="form__title contacts__field-name">Контактные данные (владельца кота)</legend>
             <label class="contacts__label form-text form-text--light">E-mail:*
               <input class="contacts__input contacts__input--email form-text form-text--light" type="email" value="kuklachev@gmail.com" required>
             </label>
@@ -124,26 +126,28 @@
           </fieldset>
           <fieldset class="form__additionally additionally">
             <legend class="form__title additionally__field-name">Дополнительно</legend>
-            <label class="additionally__label form-text">
-              <input class="additionally__input" type="checkbox" name="sweetener" checked>
-              <span class="additionally__checkbox-mark"></span>
-              <span>Сахарозаменитель</span>
-            </label>
-            <label class="additionally__label form-text">
-              <input class="additionally__input" type="checkbox" name="water">
-              <span class="additionally__checkbox-mark"></span>
-              <span>Питьевая вода</span>
-            </label>
-            <label class="additionally__label form-text">
-              <input class="additionally__input" type="checkbox" name="milk">
-              <span class="additionally__checkbox-mark"></span>
-              <span>Молоко</span>
-            </label>
-            <label class="additionally__label form-text">
-              <input class="additionally__input" type="checkbox" name="vitamins">
-              <span class="additionally__checkbox-mark"></span>
-              <span>Витамины</span>
-            </label>
+            <div class="additionally__wrapper">
+              <label class="additionally__label form-text">
+                <input class="additionally__input" type="checkbox" name="sweetener" checked>
+                <span class="additionally__checkbox-mark"></span>
+                <span>Сахарозаменитель</span>
+              </label>
+              <label class="additionally__label form-text">
+                <input class="additionally__input" type="checkbox" name="water">
+                <span class="additionally__checkbox-mark"></span>
+                <span>Питьевая вода</span>
+              </label>
+              <label class="additionally__label form-text">
+                <input class="additionally__input" type="checkbox" name="milk">
+                <span class="additionally__checkbox-mark"></span>
+                <span>Молоко</span>
+              </label>
+              <label class="additionally__label form-text">
+                <input class="additionally__input" type="checkbox" name="vitamins">
+                <span class="additionally__checkbox-mark"></span>
+                <span>Витамины</span>
+              </label>
+            </div>
           </fieldset>
           <div class="form__buttons">
             <button class="form__submit-button primary-button" type="submit">Отправить заявку</button>

@@ -56,6 +56,7 @@
   .product-presentation {
     padding: 0 $base-indent-tablet;
     margin-bottom: 0;
+    margin-top: 32px;
     text-align: start;
 
     &::before {
@@ -95,6 +96,7 @@
   .product-presentation {
     padding: 0 $base-indent-desktop;
     margin-bottom: 82px;
+    margin-top: 0;
     position: relative;
     min-height: 553px;
 
@@ -105,7 +107,7 @@
       height: 694px;
       background-image: url("../img/index-background-desktop.jpg");
       background-repeat: no-repeat;
-      top: -141px;
+      top: -168px;
       left: 50%;
     }
 
@@ -114,7 +116,7 @@
       position: absolute;
       width: 720px;
       height: 694px;
-      top: -141px;
+      top: -168px;
       left: 50%;
       background-image: linear-gradient(to top, $primary-color, $primary-color);
       opacity: 0.85;
@@ -135,7 +137,8 @@
   .product-presentation__image {
     position: absolute;
     z-index: 2;
-    right: 140px;
+    right: 330px;
+    top: -27px;
   }
 
   .product-presentation__link {

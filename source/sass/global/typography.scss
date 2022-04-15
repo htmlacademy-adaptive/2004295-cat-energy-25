@@ -19,3 +19,12 @@
 .form-text--light {
   color: $text-dark-lighter-1;
 }
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .form-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -8,6 +8,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  max-width: 76px;
 }
 
 .product-info__description-list {
@@ -26,4 +27,35 @@
 
 .product-info__description-value {
   margin: 0;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .product-info__title {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 145px;
+  }
+
+  .product-info__description-list {
+    margin-bottom: 33px;
+    font-size: 16px;
+  }
+
+  .product-info__description-item {
+    padding: 9px 0;
+    border-bottom: 1px solid $reserve-color-3;
+  }
+}
+
+//*Media-desktop
+
+@media (min-width: $desktop-width) {
+  .product-info__title {
+    line-height: 21px;
+  }
 }

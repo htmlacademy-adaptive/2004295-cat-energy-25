@@ -39,4 +39,30 @@
   border-radius: 50%;
   bottom: -7px;
   left: -45px;
+  box-sizing: border-box;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .objective__label {
+    margin-left: 60px;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  .objective__input {
+    &:checked + .objective__checkbox-mark {
+      background-color: $primary-color;
+      box-shadow: inset 0 0 0 10px $background-light;
+    }
+  }
+
+  .objective__checkbox-mark {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+  }
 }

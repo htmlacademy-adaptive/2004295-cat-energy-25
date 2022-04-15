@@ -16,4 +16,21 @@
 .catalog-card__button {
   grid-column: 1/3;
   padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+//*Media-tablet
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .catalog-card__image-wrapper {
+    padding: 0;
+    margin-bottom: 34px;
+  }
 }
