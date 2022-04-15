@@ -6,30 +6,6 @@
   background-color: $secondary-color;
 }
 
-.logo-text--footer {
-  padding: 39px 0 31px;
-
-  display: flex;
-  justify-content: center;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.footer__logo {
-  padding: 22px 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
 .footer__socials-list {
   padding: 22px 0 21px;
 
@@ -53,14 +29,11 @@
     min-height: 147px;
   }
 
-  .logo-text--footer {
+  .footer__org-logo {
     padding: 0;
-
-    display: flex;
-    justify-content: center;
   }
 
-  .footer__logo {
+  .footer__dev-logo {
     padding: 0;
     min-width: 163px;
   }

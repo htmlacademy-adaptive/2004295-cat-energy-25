@@ -1,8 +1,18 @@
+// *Логотип в виде текста в Шапке (блок)
+
+.logo-text {
+  display: flex;
+}
+
+// Красит часть Логотипа в виде текста в шапке в темный цвет
+
 .logo-text__image {
   path:last-child {
     fill: $text-darker;
   }
 }
+
+// *Логотип в виде иконки в Шапке (блок)
 
 .logo-icon {
   &:hover {
@@ -14,22 +24,38 @@
   }
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+//* Логотип Cat Energy в Подвале (элемент)
+
+.footer__org-logo {
+  padding: 39px 0 31px;
+
+  text-align: center;
+  display: block;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 
-.footer-logo {
-  &:hover .footer-logo__icon-path {
+//* Логотип HTML Academy в Подвале (элемент)
+
+.footer__dev-logo {
+  padding: 22px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+// *Логотип HTML Academy (блок)
+
+.developer-logo {
+  &:hover .developer-logo__icon-path {
     fill: $primary-color;
   }
 
@@ -38,7 +64,9 @@
   }
 }
 
-.footer-logo__text {
+// Текстовая часть
+
+.developer-logo__text {
   font-size: $primary-fs;
   line-height: 18px;
   font-family: $third-font-family;
@@ -46,6 +74,8 @@
   text-decoration: none;
 }
 
-.footer-logo__icon {
+// Графическая часть
+
+.developer-logo__icon {
   display: flex;
 }
