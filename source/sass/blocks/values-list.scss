@@ -99,6 +99,8 @@
 
     font-size: $third-fs;
     line-height: 1;
+
+    background-color: $background-light;
   }
 }
 
@@ -114,5 +116,9 @@
     &:not(:last-child) {
       margin-right: 42px;
     }
+  }
+
+  .values-list__title {
+    background-color: $secondary-color;
   }
 }
