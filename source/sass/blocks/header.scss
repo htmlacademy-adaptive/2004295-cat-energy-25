@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-// *Кнопка бургер при ЗАКРЫТОМ меню (бургер)
+// *Кнопка бургер при ЗАКРЫТОМ меню (иконка бургер)
 .header-navigation--closed .header-navigation__button::before {
   position: absolute;
   content: "";
@@ -43,7 +43,7 @@
   box-shadow: 0 6.5px 0 0 $background-dark, 0 14.5px 0 0 $background-dark;
 }
 
-// *Кнопка при ОТКРЫТОМ меню (крестик)
+// *Кнопка при ОТКРЫТОМ меню (иконка крестик)
 .header-navigation--opened .header-navigation__button {
   &::before,
   &::after {
