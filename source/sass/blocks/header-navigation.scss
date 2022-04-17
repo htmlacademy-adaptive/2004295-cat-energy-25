@@ -1,12 +1,17 @@
 //*Навигация меню
-
-.header-navigation {
-  display: none;
-}
-
 .header-navigation__list {
   padding: 0;
   margin: 0;
+
+  flex-direction: column;
+
+  position: absolute;
+  width: 100%;
+  min-height: 66px;
+  top: 100%;
+  right: 0;
+
+  z-index: 3;
 
   text-align: center;
   list-style: none;
@@ -44,25 +49,19 @@
   text-underline-offset: 8px;
 }
 
-//*Открывает навигацию
-
-.header__navigation--opened-menu {
-  display: flex;
-}
-
 //*tablet-width
 
 @media (min-width: $tablet-width) {
-  .header-navigation {
-    display: block;
-  }
-
   .header-navigation__list {
     width: 440px;
 
     display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    position: static;
   }
 
   .header-navigation__item {
@@ -89,6 +88,7 @@
 @media (min-width: $desktop-width) {
   .header-navigation__list {
     width: 478px;
+    position: relative;
   }
 
   .header-navigation__link {
