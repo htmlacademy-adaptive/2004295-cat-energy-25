@@ -1,0 +1,112 @@
+//*tablet & desktop width
+
+@media (min-width: $tablet-width) {
+  input[type="range"] {
+    /* stylelint-disable-next-line */
+    -webkit-appearance: none;
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+  }
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    // Hides the slider so custom styles can be added
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+
+    // Стилизация прогресс-трека слайдера
+    height: 6px;
+    background-color: $color-6;
+    border-radius: 6px;
+  }
+
+  // * Стилизация кнопки слайдера
+  // Стилизация кнопки слайдера дяя WebKit/Blink
+  input[type="range"]::-webkit-slider-thumb {
+    /* stylelint-disable-next-line */
+    -webkit-appearance: none;
+    border: 1px solid $color-3;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: #68b738;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: inset 0 0 0 13px $background-light, 0 1px 3px rgba(0, 0, 0, 0.16); /* Add cool effects to your sliders! */
+
+    &:hover {
+      box-shadow: inset 0 0 0 13px $background-light, 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $primary-color;
+      box-shadow: inset 0 0 0 13px $background-light, 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // Стилизация кнопки слайдера дяя Firefox
+  input[type="range"]::-moz-range-thumb {
+    border: 1px solid $color-3;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: #68b738;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: inset 0 0 0 13px $background-light, 0 1px 3px rgba(0, 0, 0, 0.16); /* Add cool effects to your sliders! */
+
+    &:hover {
+      box-shadow: inset 0 0 0 13px $background-light, 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $primary-color;
+      box-shadow: inset 0 0 0 13px $background-light, 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  /* All the same stuff for IE */
+  input[type="range"]::-ms-thumb {
+    border: 1px solid $color-3;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: #68b738;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: inset 0 0 0 13px $background-light, 0 1px 3px rgba(0, 0, 0, 0.16); /* Add cool effects to your sliders! */
+
+    &:hover {
+      box-shadow: inset 0 0 0 13px $background-light, 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $primary-color;
+      box-shadow: inset 0 0 0 13px $background-light, 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // * Стилизация прогресс-трека слайдера
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background-color: $color-6;
+    border-radius: 6px;
+  }
+
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background-color: $color-6;
+    border-radius: 6px;
+  }
+}
