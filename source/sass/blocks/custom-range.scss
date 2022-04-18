@@ -1,18 +1,18 @@
 //*tablet & desktop width
 
 @media (min-width: $tablet-width) {
-  input[type="range"] {
+  .main-slider__range {
     /* stylelint-disable-next-line */
     -webkit-appearance: none;
     width: 100%; /* Specific width is required for Firefox. */
     background: transparent; /* Otherwise white in Chrome */
   }
 
-  input[type="range"]:focus {
+  .main-slider__range:focus {
     outline: none;
   }
 
-  input[type="range"]::-ms-track {
+  .main-slider__range::-ms-track {
     width: 100%;
     cursor: pointer;
 
@@ -29,7 +29,7 @@
 
   // * Стилизация кнопки слайдера
   // Стилизация кнопки слайдера дяя WebKit/Blink
-  input[type="range"]::-webkit-slider-thumb {
+  .main-slider__range::-webkit-slider-thumb {
     /* stylelint-disable-next-line */
     -webkit-appearance: none;
     border: 1px solid $color-3;
@@ -52,7 +52,7 @@
   }
 
   // Стилизация кнопки слайдера дяя Firefox
-  input[type="range"]::-moz-range-thumb {
+  .main-slider__range::-moz-range-thumb {
     border: 1px solid $color-3;
     height: 34px;
     width: 34px;
@@ -73,7 +73,7 @@
   }
 
   /* All the same stuff for IE */
-  input[type="range"]::-ms-thumb {
+  .main-slider__range::-ms-thumb {
     border: 1px solid $color-3;
     height: 34px;
     width: 34px;
@@ -94,7 +94,7 @@
   }
 
   // * Стилизация прогресс-трека слайдера
-  input[type="range"]::-webkit-slider-runnable-track {
+  .main-slider__range::-webkit-slider-runnable-track {
     width: 100%;
     height: 6px;
     cursor: pointer;
@@ -102,7 +102,7 @@
     border-radius: 6px;
   }
 
-  input[type="range"]::-moz-range-track {
+  .main-slider__range::-moz-range-track {
     width: 100%;
     height: 6px;
     cursor: pointer;
