@@ -34,6 +34,7 @@
 
   display: flex;
   justify-content: space-between;
+  column-gap: $base-indent;
 
   font-family: $third-font-family;
   font-size: $third-fs;

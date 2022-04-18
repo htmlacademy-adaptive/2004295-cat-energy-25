@@ -13,6 +13,7 @@
 .partnership__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
 }
 
 .partnership__title {
@@ -76,6 +77,8 @@
   .partnership__wrapper {
     grid-template-columns: 163px 155px;
     column-gap: 87px;
+    max-height: 198px;
+    overflow: hidden;
   }
 
   .partnership__description {

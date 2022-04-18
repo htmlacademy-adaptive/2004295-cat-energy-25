@@ -17,6 +17,7 @@
   padding-top: 30px;
 
   background-color: $secondary-color;
+  overflow: hidden;
 
   &:not(:last-child) {
     margin-bottom: $base-indent;
