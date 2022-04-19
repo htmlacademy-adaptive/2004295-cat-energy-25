@@ -61,6 +61,37 @@
   .header-navigation--closed .header-navigation__list {
     display: none;
   }
+
+  // !No JS
+  .body--nojs {
+    .header {
+      padding: 0;
+    }
+
+    .header__wrapper {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .header-navigation__list {
+      display: block;
+
+      position: static;
+
+      text-align: center;
+    }
+
+    .header-navigation__button {
+      display: none;
+    }
+
+    .header__logo-wrapper {
+      width: auto;
+      min-height: 66px;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
 }
 
 //*tablet-width
