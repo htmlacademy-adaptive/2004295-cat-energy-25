@@ -23,6 +23,7 @@
   border: 1px solid $color-2;
   box-sizing: border-box;
   outline: none;
+  position: relative;
 
   &:hover {
     border-color: $color-3;
@@ -42,33 +43,37 @@
 .contacts__input--email {
   width: 219px;
 
-  background-image: url("/img/email.svg");
-  background-repeat: no-repeat;
-  background-position: 185px 50%;
-
-  &:invalid {
-    background-image: url("/img/email-invalid.svg");
+  &:focus + .contacts__input-image--email path {
+    stroke: $primary-color;
   }
 
-  &:focus {
-    background-image: url("/img/email-valid.svg");
+  &:invalid + .contacts__input-image--email path {
+    stroke: $error-color;
   }
 }
 
 .contacts__input--phone {
   width: 204px;
 
-  background-image: url("/img/phone.svg");
-  background-repeat: no-repeat;
-  background-position: 171px 50%;
-
-  &:invalid {
-    background-image: url("/img/phone-invalid.svg");
+  &:focus + .contacts__input-image--phone path {
+    fill: $primary-color;
   }
 
-  &:focus {
-    background-image: url("/img/phone-valid.svg");
+  &:invalid + .contacts__input-image--phone path {
+    fill: $error-color;
   }
+}
+
+.contacts__input-image {
+  position: absolute;
+}
+
+.contacts__input-image--email {
+  right: 16px;
+}
+
+.contacts__input-image--phone {
+  right: 13px;
 }
 
 //*tablet-width
@@ -90,12 +95,18 @@
 
   .contacts__input--email {
     width: 551px;
-    background-position: 514px 50%;
   }
 
   .contacts__input--phone {
     width: 535px;
-    background-position: 498px 50%;
+  }
+
+  .contacts__input-image--email {
+    right: 19px;
+  }
+
+  .contacts__input-image--phone {
+    right: 17px;
   }
 }
 
@@ -114,11 +125,13 @@
 
   .contacts__input--email {
     width: 486px;
-    background-position: 448px 50%;
   }
 
   .contacts__input--phone {
     width: 472px;
-    background-position: 435px 50%;
+  }
+
+  .contacts__input-image--email {
+    left: 532px;
   }
 }
