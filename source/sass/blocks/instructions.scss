@@ -17,29 +17,8 @@
   list-style: none;
 }
 
-.instructions__item--usefull {
-  &::after {
-    background-image: url("/img/usefull.svg");
-  }
-}
-
-.instructions__item--easy {
-  &::after {
-
-    background-image: url("/img/easy.svg");
-  }
-}
-
-.instructions__item--food {
-  &::after {
-    background-image: url("/img/food.svg");
-  }
-}
-
-.instructions__item--result {
-  &::after {
-    background-image: url("/img/result.svg");
-  }
+.instructions__image {
+  position: absolute;
 }
 
 .instructions__item {
@@ -48,17 +27,6 @@
   column-gap: $base-indent;
 
   position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-    bottom: -3px;
-    background-color: $primary-color;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
 
   &:not(:last-child) {
     margin-bottom: $base-indent;
@@ -114,12 +82,6 @@
       line-height: 1;
     }
 
-    &::after {
-      width: 80px;
-      height: 80px;
-      top: 40px;
-    }
-
     &:not(:last-child) {
       margin-bottom: 0;
     }
@@ -170,6 +132,13 @@
 
     font-size: $primary-fs;
     line-height: 24px;
+  }
+
+  .instructions__image {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 40px;
   }
 }
 
