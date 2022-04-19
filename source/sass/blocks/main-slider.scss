@@ -32,27 +32,38 @@
   line-height: 20px;
   text-align: center;
 
-  &:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 6px;
-    text-decoration-color: rgba(0, 0, 0, 0.4);
-  }
+  grid-row: 1/2;
+}
 
-  &:active {
-    text-decoration: none;
-  }
+.main-slider__range-label--before {
+  grid-column: 1/2;
+}
+
+.main-slider__range-label--after {
+  grid-column: 3/4;
 }
 
 .main-slider__range {
   margin: 0;
   height: 14px;
+  grid-column: 2/3;
 
   border: 1px solid $color-3;
   border-radius: 6px;
 
   appearance: none;
   cursor: pointer;
+
+  &:hover ~ .main-slider__range-label {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &:active ~ .main-slider__range-label {
+    text-decoration: none;
+  }
 }
 
 //*tablet-width
