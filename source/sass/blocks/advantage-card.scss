@@ -4,34 +4,22 @@
   position: relative;
 }
 
-.advantage-card--slimming {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 53px;
-    left: 1px;
-    top: -10px;
-    background-repeat: no-repeat;
-    background-image: url("/img/cat_back-1.svg");
-  }
+.advantage-card__image {
+  position: absolute;
 }
 
-.advantage-card--mass {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 67px;
-    height: 50px;
-    left: -8px;
-    top: -10px;
-    background-repeat: no-repeat;
-    background-image: url("/img/cat_back-2.svg");
-  }
+.advantage-card__image--slimming {
+  top: -9px;
+  left: 2px;
+}
+
+.advantage-card__image--mass {
+  top: -6px;
+  left: -7px;
 }
 
 .advantage-card__header {
-  margin: 0 0 29px 91px;
+  margin: 0 0 29px 71px;
 
   font-size: 24px;
   line-height: 37px;
@@ -77,24 +65,20 @@
 //*tablet-width
 
 @media (min-width: $tablet-width) {
-  .advantage-card--slimming {
-    &::before {
-      width: 200px;
-      height: 200px;
-      left: 393px;
-      top: 0;
-      background-size: 200px 200px;
-    }
+  .advantage-card__image {
+    height: 200px;
   }
 
-  .advantage-card--mass {
-    &::before {
-      width: 268px;
-      height: 200px;
-      left: 359px;
-      top: 10px;
-      background-size: 268px 200px;
-    }
+  .advantage-card__image--slimming {
+    width: 200px;
+    left: 393px;
+    top: 0;
+  }
+
+  .advantage-card__image--mass {
+    width: 268px;
+    left: 359px;
+    top: 10px;
   }
 
   .advantage-card__header {
@@ -131,24 +115,18 @@
 //*desktop-width
 
 @media (min-width: $desktop-width) {
-  .advantage-card--slimming {
-    &::before {
-      width: 100px;
-      height: 106px;
-      left: 0;
-      top: -41px;
-      background-size: 100px 106px;
-    }
+  .advantage-card__image--slimming {
+    width: 100px;
+    height: 106px;
+    left: 0;
+    top: -41px;
   }
 
-  .advantage-card--mass {
-    &::before {
-      width: 134px;
-      height: 100px;
-      left: -19px;
-      top: -41px;
-      background-size: 134px 100px;
-    }
+  .advantage-card__image--mass {
+    width: 134px;
+    height: 100px;
+    left: -19px;
+    top: -41px;
   }
 
   .advantage-card__header {
