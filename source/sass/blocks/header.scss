@@ -27,54 +27,6 @@
   }
 }
 
-//*Кнопка меню
-.header-navigation__button {
-  display: block;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-
-  background-color: transparent;
-  border: none;
-
-  cursor: pointer;
-}
-
-// *Кнопка бургер при ЗАКРЫТОМ меню (иконка бургер)
-.header-navigation--closed .header-navigation__button::before {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 0;
-  width: 24px;
-  height: 1.5px;
-  background-color: $background-dark;
-  box-shadow: 0 6.5px 0 0 $background-dark, 0 13px 0 0 $background-dark;
-}
-
-// *Кнопка при ОТКРЫТОМ меню (иконка крестик)
-.header-navigation--opened .header-navigation__button {
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    width: 25px;
-    height: 1.5px;
-    background-color: $background-dark;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
 //*tablet-width
 
 @media (min-width: $tablet-width) {
@@ -92,10 +44,6 @@
     width: auto;
 
     position: static;
-  }
-
-  .header-navigation__button {
-    display: none;
   }
 }
 
