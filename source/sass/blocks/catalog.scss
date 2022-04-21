@@ -2,21 +2,23 @@
 
 .catalog {
   padding: 0 $base-indent;
-  border-top: 1px solid $reserve-color-1;
   margin-bottom: 25px;
+
+  border-top: 1px solid $color-1;
 }
 
 .catalog__title {
   margin: 27px 0 41px;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .catalog {
     padding: 0 $base-indent-tablet;
-    border-top: none;
     margin-bottom: 68px;
+
+    border-top: none;
   }
 
   .catalog__title {
@@ -24,7 +26,7 @@
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .catalog {
@@ -35,7 +37,5 @@
 
   .catalog__title {
     margin: 20px 0 84px;
-    font-size: 60px;
-    line-height: 60px;
   }
 }

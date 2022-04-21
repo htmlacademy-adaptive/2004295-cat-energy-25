@@ -4,35 +4,48 @@
 
 .body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
   min-width: 320px;
 
   font-family: $primary-font-family;
   font-weight: 400;
-  color: $text-dark-1;
+  color: $text-dark;
 }
 
 .body__wrapper {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   min-height: 100%;
   width: 320px;
 
+  display: flex;
+  flex-direction: column;
+
   background-color: $background-light;
+
   position: relative;
+  overflow: hidden;
 }
 
 .visually-hidden {
-  display: none;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .body {
@@ -44,7 +57,7 @@ img {
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .body {

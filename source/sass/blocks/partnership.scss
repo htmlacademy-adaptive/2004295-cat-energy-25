@@ -2,6 +2,7 @@
 
 .partnership {
   padding: 26px $base-indent;
+
   background-color: $secondary-color;
 }
 
@@ -12,26 +13,29 @@
 .partnership__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
 }
 
 .partnership__title {
   margin: 0;
-  font-size: 16px;
+
+  font-size: $primary-fs;
   line-height: 20px;
   font-weight: 400;
-  color: $text-dark-2;
+  color: $text-darker;
   text-transform: uppercase;
 }
 
 .partnership__description {
-  font-family: $third-font-family;
-  font-size: 14px;
-  line-height: 20px;
-  color: $text-dark-lighter-1;
   margin: 0;
+
+  font-family: $third-font-family;
+  font-size: $third-fs;
+  line-height: 20px;
+  color: $text-light-dark-1;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .partnership {
@@ -43,33 +47,38 @@
   }
 
   .partnership__title {
-    font-size: 20px;
+    font-size: $secondary-fs;
     line-height: 26px;
   }
 
   .partnership__description {
-    font-size: 16px;
-    text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    font-size: $primary-fs;
+    text-align: right;
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .partnership {
     padding: 56px 80px;
-    position: absolute;
-    transform: translate(110px, 95px);
     max-width: 565px;
+
+    position: absolute;
+
+    transform: translate(110px, 95px);
     box-sizing: border-box;
   }
 
   .partnership__wrapper {
     grid-template-columns: 163px 155px;
     column-gap: 87px;
+    max-height: 198px;
+    overflow: hidden;
   }
 
   .partnership__description {

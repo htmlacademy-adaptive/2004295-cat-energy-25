@@ -1,6 +1,8 @@
 //*Показатели в Живом примере (index)
 
 .values-list {
+  padding: 0;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 70px;
@@ -9,32 +11,52 @@
 
 .values-list__wrapper {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  border: 1px solid #cdcdcd;
+  justify-content: flex-end;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 124px;
+    height: 56px;
+    top: 0;
+    left: 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+  }
 }
 
 .values-list__indicator {
   margin: 0;
+  margin-bottom: 8.53px;
+
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 7.53px;
 }
 
 .values-list__title {
+  margin: 0;
+  min-width: 87px;
+
+  font-size: 12px;
+  line-height: 1;
   font-family: $third-font-family;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: $text-dark-lighter-1;
+  color: $text-light-dark-1;
   text-transform: lowercase;
-  padding: 0 20px;
   text-align: center;
+
+  background-color: $secondary-color-darker;
+  box-sizing: border-box;
+  z-index: 1;
+  order: 2;
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .values-list {
@@ -45,25 +67,45 @@
   .values-list__wrapper {
     width: 162px;
 
+    &:first-child .values-list__title {
+      min-width: 114px;
+    }
+
+    &:last-child .values-list__title {
+      min-width: 142px;
+    }
+
     &:not(:last-child) {
       margin-right: 42px;
+    }
+
+    &::before {
+      width: 162px;
+      height: 72px;
+      top: -15px;
     }
   }
 
   .values-list__indicator {
+    margin-bottom: 11px;
+
     font-size: 30px;
     line-height: 37px;
-    margin: 15px 0 11px;
   }
 
   .values-list__title {
-    font-size: 14px;
-    line-height: 14px;
-    padding: 0 15px;
+    br {
+      display: none;
+    }
+
+    font-size: $third-fs;
+    line-height: 1;
+
+    background-color: $background-light;
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .values-list {
@@ -75,5 +117,9 @@
     &:not(:last-child) {
       margin-right: 42px;
     }
+  }
+
+  .values-list__title {
+    background-color: $secondary-color;
   }
 }

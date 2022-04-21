@@ -1,13 +1,15 @@
 //*Список товаров (catalog)
 
 .catalog-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .catalog-list__item {
   padding: 19px 0 25px;
+
   position: relative;
 
   &::before {
@@ -15,9 +17,9 @@
     position: absolute;
     height: 1px;
     width: 320px;
-    background-color: $reserve-color-4;
     top: 0;
     left: -20px;
+    background-color: $color-4;
   }
 
   &:last-child::after {
@@ -25,13 +27,13 @@
     position: absolute;
     height: 1px;
     width: 320px;
-    background-color: $reserve-color-4;
     bottom: 0;
     left: -20px;
+    background-color: $color-4;
   }
 }
 
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .catalog-list {
@@ -42,15 +44,16 @@
 
   .catalog-list__item {
     padding: 8px 37px 39px 39px;
+
     align-self: flex-end;
 
     &::before {
       height: 430px;
       width: 100%;
-      background-color: $secondary-color;
       top: auto;
       bottom: 0;
       left: 0;
+      background-color: $secondary-color;
       z-index: -1;
     }
 
@@ -60,7 +63,7 @@
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .catalog-list {

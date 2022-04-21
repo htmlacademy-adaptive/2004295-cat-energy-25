@@ -1,11 +1,12 @@
 //*Шапка
-
 .header {
+  padding: 0 $base-indent;
+  min-height: 66px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 $base-indent;
-  min-height: 66px;
+
   position: relative;
 }
 
@@ -16,75 +17,17 @@
   flex-wrap: wrap;
 }
 
-//*Навигация
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
 
-.header__navigation {
-  flex-direction: column;
-  z-index: 3;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-}
-
-//*Кнопка меню
-
-.header__toggle-button {
-  background-color: transparent;
-  padding: 0;
-  min-height: 24px;
-  border: none;
-  cursor: pointer;
-}
-
-.header__toggle-button--open {
-  position: relative;
-  display: block;
-  width: 24px;
-  height: 1.5px;
-  background-color: $background-dark;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 6.5px;
-    display: block;
-    width: 24px;
-    height: 1.5px;
-    background-color: $background-dark;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 6.5px;
-    display: block;
-    width: 24px;
-    height: 1.5px;
-    background-color: $background-dark;
+  @media (max-width: $mobile-width-only) {
+    width: calc(100% / 3 * 2);
+    justify-content: space-between;
   }
 }
 
-//*Прячет кнопку открытия
-
-// .header__toggle-button--open-hidden {
-//   display: none;
-// }
-
-.header__toggle-button--close {
-  display: block;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath style='stroke:none;fill-rule:nonzero;fill:%23000;fill-opacity:1' d='M.18.996.996.18 17.82 17.004l-.816.816Zm0 0'/%3E%3Cpath style='stroke:none;fill-rule:nonzero;fill:%23000;fill-opacity:1' d='M.18 17.008 17.004.18l.816.816L.996 17.82Zm0 0'/%3E%3C/svg%3E");
-  width: 18px;
-  height: 18px;
-}
-
-//*Прячет кнопку закрытия
-
-.header__toggle-button--close-hidden {
-  display: none;
-}
-
-//*Media-tablet
+//*tablet-width
 
 @media (min-width: $tablet-width) {
   .header {
@@ -97,22 +40,19 @@
   }
 
   .header__navigation {
-    position: static;
-    width: auto;
     margin-left: auto;
-  }
+    width: auto;
 
-  .header__toggle-button {
-    display: none;
+    position: static;
   }
 }
 
-//*Media-desktop
+//*desktop-width
 
 @media (min-width: $desktop-width) {
   .header {
     padding: 0 $base-indent-desktop;
-    min-height: 168px;
     margin-bottom: 0;
+    min-height: 168px;
   }
 }
