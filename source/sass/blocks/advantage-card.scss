@@ -6,6 +6,9 @@
 
 .advantage-card__image {
   position: absolute;
+  background: url("data:image/svg+xml,%3Csvg width='51' height='50' viewBox='0 0 51 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25.5' cy='25' r='25' fill='%2368B738'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .advantage-card__image--slimming {
@@ -65,10 +68,6 @@
 //*tablet-width
 
 @media (min-width: $tablet-width) {
-  .advantage-card__image {
-    height: 200px;
-  }
-
   .advantage-card__image--slimming {
     width: 200px;
     left: 393px;
@@ -117,14 +116,12 @@
 @media (min-width: $desktop-width) {
   .advantage-card__image--slimming {
     width: 100px;
-    height: 106px;
     left: 0;
     top: -41px;
   }
 
   .advantage-card__image--mass {
     width: 134px;
-    height: 100px;
     left: -19px;
     top: -41px;
   }
