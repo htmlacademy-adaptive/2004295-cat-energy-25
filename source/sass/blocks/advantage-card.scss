@@ -8,17 +8,18 @@
   position: absolute;
   background: url("data:image/svg+xml,%3Csvg width='51' height='50' viewBox='0 0 51 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25.5' cy='25' r='25' fill='%2368B738'/%3E%3C/svg%3E%0A") no-repeat;
   background-size: contain;
-  background-position: center;
 }
 
 .advantage-card__image--slimming {
   top: -9px;
   left: 2px;
+  background-position: bottom;
 }
 
 .advantage-card__image--mass {
   top: -6px;
   left: -7px;
+  background-position: 9.5px 0;
 }
 
 .advantage-card__header {
@@ -78,6 +79,7 @@
     width: 268px;
     left: 359px;
     top: 10px;
+    background-position: 36px 0;
   }
 
   .advantage-card__header {
@@ -124,6 +126,7 @@
     width: 134px;
     left: -19px;
     top: -41px;
+    background-position: 19px 0;
   }
 
   .advantage-card__header {
