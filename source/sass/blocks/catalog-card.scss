@@ -5,6 +5,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.catalog-card__image {
+  display: block;
+}
+
 .catalog-card__image-wrapper {
   padding: 10px;
 
