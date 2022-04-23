@@ -2,6 +2,10 @@
 
 .logo-text {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 // Красит часть Логотипа в виде текста в шапке в темный цвет
