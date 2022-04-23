@@ -9,10 +9,15 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   position: relative;
 
   overflow: hidden;
+}
+
+.main-slider__image {
+  display: block;
 }
 
 .main-slider__range-form {

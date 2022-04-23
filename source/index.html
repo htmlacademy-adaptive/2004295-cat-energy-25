@@ -174,10 +174,10 @@
         </article>
         <div class="main-slider">
           <div class="main-slider__image-wrapper">
-            <img class="main-slider__image main-slider__image--big" width="280" height="232"
-              src="/img/cat-fat.png" alt="Big cat.">
-            <img class="main-slider__image main-slider__image--small" width="280" height="232"
-              src="/img/cat-skinny.png" alt="Small cat.">
+            <picture>
+              <source media="(min-width: 768px)" width="592" height="511" srcset="/img/cat-compare-tablet.png 1x, /img/cat-compare-tablet@2x.png 2x">
+              <img class="main-slider__image" width="280" height="232" src="/img/cat-fat-mobile.png" srcset="/img/cat-fat-mobile@2x.png 2x" alt="Fat cat.">
+            </picture>
           </div>
           <form class="main-slider__range-form" method="post">
             <input class="main-slider__range range-slider custom-range" type="range" name="Результат" id="result">
