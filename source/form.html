@@ -18,7 +18,7 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo-wrapper">
-          <a class="logo-icon" href="#">
+          <a class="logo-icon" href="index.html">
               <svg width="34" height="38" viewBox="0 0 34 38" role="img" aria-label="Иконка логотип." aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)">
                   <path
@@ -84,7 +84,7 @@
         <p class="search-form__subtitle">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__person-objective-wrapper">
-            <fieldset class="form__person person">
+            <fieldset class="form__person person form__field">
               <legend class="form__title visually-hidden">Персональные данные питомца.</legend>
               <label class="person__label form-text form-text--light">Имя:*
                 <input class="person__input person__input--name form-text form-text--light" type="text" value="Барсик" required>
@@ -96,7 +96,7 @@
                 <input class="person__input  person__input--age form-text form-text--light" type="number" value="7">
               </label>
             </fieldset>
-            <fieldset class="form__objective objective">
+            <fieldset class="form__objective objective form__field">
               <legend class="form__title visually-hidden">Цель программы.</legend>
               <label class="objective__label form-text">
                 <input class="objective__input" type="radio" name="objective" value="slimming" checked>
@@ -115,7 +115,7 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="form__contacts contacts">
+          <fieldset class="form__contacts contacts form__field form__field--entitled">
             <legend class="form__title contacts__field-name">Контактные данные (владельца кота)</legend>
             <label class="contacts__label form-text form-text--light">E-mail:*
               <input class="contacts__input contacts__input--email form-text form-text--light" type="email" value="kuklachev@gmail.com" required>
@@ -130,12 +130,12 @@
               </svg>
             </label>
           </fieldset>
-          <fieldset class="form__comment comment">
+          <fieldset class="form__comment comment form__field form__field--entitled">
             <legend class="form__title comment__field-name">Комментарий</legend>
             <textarea class="comment__input form-text form-text--light form-text form-text--light"
               name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="form__additionally additionally">
+          <fieldset class="form__additionally additionally form__field form__field--entitled">
             <legend class="form__title additionally__field-name">Дополнительно</legend>
             <div class="additionally__wrapper">
               <label class="additionally__label form-text">
@@ -167,7 +167,7 @@
         </form>
       </section>
       <!-- *Partnership -->
-      <section class="partnership partnership--light">
+      <section class="partnership partnership--dark">
         <h2 class="visually-hidden">Наши контакты.</h2>
         <div class="partnership__wrapper">
           <h3 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h3>

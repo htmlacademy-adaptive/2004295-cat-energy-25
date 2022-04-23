@@ -20,6 +20,7 @@
 .instructions__image {
   position: absolute;
   bottom: -4px;
+  background-color: $primary-color;
 }
 
 .instructions__item {
@@ -64,20 +65,23 @@
 
   .instructions__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 58px;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 133px;
     row-gap: 37px;
+    counter-reset: steps;
   }
 
   .instructions__item {
     padding: 151px 0 57px;
     display: block;
+    counter-increment: steps;
 
     &::before {
       position: absolute;
+      content: counter(steps);
       color: $secondary-color;
       top: 0;
-      left: 45%;
+      right: 0;
 
       font-size: 280px;
       line-height: 1;
@@ -85,46 +89,6 @@
 
     &:not(:last-child) {
       margin-bottom: 0;
-    }
-  }
-
-  .instructions__item--usefull {
-    .instructions__description {
-      max-width: 201px;
-    }
-
-    &::before {
-      content: "1";
-    }
-  }
-
-  .instructions__item--easy {
-    .instructions__description {
-      max-width: 227px;
-    }
-
-    &::before {
-      content: "2";
-    }
-  }
-
-  .instructions__item--food {
-    .instructions__description {
-      max-width: 209px;
-    }
-
-    &::before {
-      content: "3";
-    }
-  }
-
-  .instructions__item--result {
-    .instructions__description {
-      max-width: 245px;
-    }
-
-    &::before {
-      content: "4";
     }
   }
 
