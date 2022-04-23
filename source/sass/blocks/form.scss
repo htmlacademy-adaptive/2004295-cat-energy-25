@@ -1,11 +1,3 @@
-//*Форма подбора программы (form)
-
-.form {
-  fieldset {
-    border: none;
-  }
-}
-
 .form__title {
   margin-left: -$base-indent;
   padding: 0 $base-indent;
@@ -18,6 +10,10 @@
 }
 
 .form__field {
+  border: none;
+}
+
+.form__field--entitled {
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -147,6 +143,8 @@
   .form__objective {
     margin-bottom: 75px;
     padding: $base-indent-tablet;
+
+    border: 1px solid $color-2;
 
     position: static;
   }
