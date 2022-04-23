@@ -65,10 +65,6 @@
 //*tablet-width
 
 @media (min-width: $tablet-width) {
-  .advantage-card__image {
-    height: 200px;
-  }
-
   .advantage-card__image--slimming {
     width: 200px;
     left: 393px;
@@ -117,14 +113,12 @@
 @media (min-width: $desktop-width) {
   .advantage-card__image--slimming {
     width: 100px;
-    height: 106px;
     left: 0;
     top: -41px;
   }
 
   .advantage-card__image--mass {
     width: 134px;
-    height: 100px;
     left: -19px;
     top: -41px;
   }

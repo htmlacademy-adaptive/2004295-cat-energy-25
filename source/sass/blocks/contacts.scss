@@ -2,7 +2,7 @@
 
 .contacts__field-name {
   margin-bottom: 35px;
-  box-sizing: border-box;
+  max-width: 182px;
 }
 
 .contacts__label {
@@ -81,6 +81,7 @@
 @media (min-width: $tablet-width) {
   .contacts__field-name {
     margin-bottom: 76px;
+    max-width: max-content;
   }
 
   .contacts__label {

@@ -2,12 +2,11 @@
 
 .partnership {
   padding: 26px $base-indent;
-
-  background-color: $secondary-color;
+  background-color: $background-light;
 }
 
-.partnership--light {
-  background-color: $background-light;
+.partnership--dark {
+  background-color: $secondary-color;
 }
 
 .partnership__wrapper {
@@ -72,6 +71,10 @@
 
     transform: translate(110px, 95px);
     box-sizing: border-box;
+  }
+
+  .partnership--dark {
+    background-color: $background-light;
   }
 
   .partnership__wrapper {
