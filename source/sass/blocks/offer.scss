@@ -5,7 +5,7 @@
   width: 100%;
 
   box-sizing: border-box;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
 
@@ -76,7 +76,7 @@
 @media (min-width: $tablet-width) {
   .offer {
     padding: 0;
-    margin: 0 $base-indent-tablet 76px;
+    margin-bottom: 76px;
     height: 200px;
     width: auto;
   }
