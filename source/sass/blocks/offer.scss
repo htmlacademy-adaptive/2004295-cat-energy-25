@@ -4,10 +4,32 @@
   height: 290px;
   width: 100%;
 
-  background-image: url("../img/catalog-image.png");
+  box-sizing: border-box;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
-  box-sizing: border-box;
+
+  background-image: url("/img/catalog-image-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/catalog-image-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("/img/catalog-image-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/catalog-image-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/catalog-image-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/catalog-image-desktop@2x.jpg");
+    }
+  }
 }
 
 .offer__wrapper {
@@ -54,12 +76,9 @@
 @media (min-width: $tablet-width) {
   .offer {
     padding: 0;
-    margin: 0 $base-indent-tablet 76px;
+    margin-bottom: 76px;
     height: 200px;
     width: auto;
-
-    background-size: 100%;
-    background-position: center 60%;
   }
 
   .offer__wrapper {
@@ -86,9 +105,6 @@
   .offer {
     margin: 0;
     height: 100%;
-
-    background-position: 100%;
-    background-size: inherit;
   }
 
   .offer__wrapper {

@@ -9,10 +9,16 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   position: relative;
 
   overflow: hidden;
+}
+
+.main-slider__image {
+  display: block;
+  width: 100%;
 }
 
 .main-slider__range-form {
