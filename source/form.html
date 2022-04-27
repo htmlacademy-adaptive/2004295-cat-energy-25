@@ -19,14 +19,20 @@
       <div class="header__wrapper">
         <div class="header__logo-wrapper">
           <a class="logo-icon" href="#">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="/img/logo-icon-desktop.svg">
-              <source media="(min-width: 768px)" type="image/svg+xml" srcset="/img/logo-icon-tablet.svg">
-              <img class="logo-icon__image" width="34" height="38" src="/img/logo-icon-mobile.svg" alt="Иконка логотип.">
-            </picture>
+            <svg class="logo-icon--mobile" width="33" height="38">
+              <use href="img/sprite.svg#logo-icon__mobile"></use>
+            </svg>
+            <svg class="logo-icon--tablet" width="61" height="51">
+              <use href="img/sprite.svg#logo-icon__tablet"></use>
+            </svg>
+            <svg class="logo-icon--desktop" width="71" height="59">
+              <use href="img/sprite.svg#logo-icon__desktop"></use>
+            </svg>
           </a>
           <a class="logo-text">
-            <img src="/img/logo-text-mobile.svg" width="101" height="18" alt="Иконка логотип.">
+            <svg class="logo-text-icon" width="101" height="18">
+              <use href="img/sprite.svg#logo-text"></use>
+            </svg>
           </a>
         </div>
         <nav class="header__navigation header-navigation header-navigation--closed">
