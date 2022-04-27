@@ -1,9 +1,6 @@
 // *Логотип в Шапке
 
-.logo-icon,
-.logo-text {
-  display: flex;
-
+.logo-icon {
   &:hover {
     opacity: 0.6;
   }
@@ -13,10 +10,18 @@
   }
 }
 
+.logo-text {
+  display: none;
+}
+
 @media (max-width: $mobile-width-only) {
   .logo-icon--tablet,
   .logo-icon--desktop {
     display: none;
+  }
+
+  .logo-text {
+    display: flex;
   }
 }
 
@@ -35,11 +40,6 @@
 
   .logo-icon--desktop {
     display: inline-block;
-  }
-
-  .logo-text__icon {
-    width: 118px;
-    height: 21px;
   }
 }
 
