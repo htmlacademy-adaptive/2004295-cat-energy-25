@@ -1,24 +1,7 @@
-// *Логотип в виде текста в Шапке (блок)
+// *Логотип в Шапке
 
+.logo-icon,
 .logo-text {
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-// Красит часть Логотипа в виде текста в шапке в темный цвет
-
-.logo-text__image {
-  path:last-child {
-    fill: $text-darker;
-  }
-}
-
-// *Логотип в виде иконки в Шапке (блок)
-
-.logo-icon {
   display: flex;
 
   &:hover {
@@ -30,8 +13,34 @@
   }
 }
 
-.logo-icon__image {
-  width: 100%;
+@media (max-width: $mobile-width-only) {
+  .logo-icon--tablet,
+  .logo-icon--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo-icon--mobile,
+  .logo-icon--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-icon--mobile,
+  .logo-icon--tablet {
+    display: none;
+  }
+
+  .logo-icon--desktop {
+    display: inline-block;
+  }
+
+  .logo-text__icon {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 //* Логотип Cat Energy в Подвале (элемент)
