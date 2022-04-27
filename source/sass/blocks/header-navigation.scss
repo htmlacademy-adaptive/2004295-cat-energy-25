@@ -28,7 +28,7 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active:not(.header-navigation__link--current) {
     opacity: 0.3;
   }
 }
