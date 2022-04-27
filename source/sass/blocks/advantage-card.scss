@@ -67,12 +67,14 @@
 @media (min-width: $tablet-width) {
   .advantage-card__image--slimming {
     width: 200px;
+    height: 211px;
     left: 393px;
     top: 0;
   }
 
   .advantage-card__image--mass {
     width: 268px;
+    height: 200px;
     left: 359px;
     top: 10px;
   }
@@ -113,12 +115,14 @@
 @media (min-width: $desktop-width) {
   .advantage-card__image--slimming {
     width: 100px;
+    height: 106px;
     left: 0;
     top: -41px;
   }
 
   .advantage-card__image--mass {
     width: 134px;
+    height: 100px;
     left: -19px;
     top: -41px;
   }
