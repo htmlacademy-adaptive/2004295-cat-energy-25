@@ -111,21 +111,25 @@
     width: 100px;
     height: 106px;
     left: 0;
-    top: -41px;
+    top: -36px;
   }
 
   .advantage-card__image--mass {
     width: 134px;
     height: 100px;
     left: -19px;
-    top: -41px;
+    top: -31px;
   }
 
   .advantage-card__header {
-    margin: 0 0 73px 162px;
+    margin: 0 0 74px 162px;
   }
 
   .advantage-card__description {
     margin-bottom: 27px;
+  }
+
+  .advantage-card__link-icon {
+    padding: 4px 23px;
   }
 }
