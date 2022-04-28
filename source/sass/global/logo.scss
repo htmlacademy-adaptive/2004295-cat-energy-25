@@ -73,14 +73,16 @@
 
 // *Логотип HTML Academy (блок)
 
-.developer-logo {
-  &:hover .developer-logo__icon-path {
-    fill: $primary-color;
-  }
+.developer-logo__image {
+  fill: #666666;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.developer-logo:hover .developer-logo__image {
+  fill: $primary-color;
+}
+
+.developer-logo:active {
+  opacity: 0.3;
 }
 
 // Текстовая часть
