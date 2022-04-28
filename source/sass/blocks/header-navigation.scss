@@ -58,12 +58,12 @@
 .header-navigation--closed .header-navigation__button::before {
   position: absolute;
   content: "";
-  top: 5px;
+  top: 2px;
   left: 0;
   width: 24px;
   height: 1.5px;
   background-color: $background-dark;
-  box-shadow: 0 6.5px 0 0 $background-dark, 0 13px 0 0 $background-dark;
+  box-shadow: 0 8px 0 0 $background-dark, 0 16px 0 0 $background-dark;
 }
 
 // Кнопка меню при ОТКРЫТОМ меню (иконка крестик)

@@ -7,10 +7,6 @@
 }
 
 .socials__item {
-  &:not(:last-child) {
-    margin-right: 24px;
-  }
-
   &:active {
     opacity: 0.3;
   }

@@ -47,10 +47,12 @@
 //* Логотип Cat Energy в Подвале (элемент)
 
 .footer__org-logo {
-  padding: 39px 0 31px;
+  padding: 39px 0 32px;
+
+  display: flex;
+  justify-content: center;
 
   text-align: center;
-  display: block;
 
   &:hover {
     opacity: 0.6;
@@ -65,10 +67,12 @@
 
 .footer__dev-logo {
   padding: 22px 0;
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   cursor: pointer;
 }
 

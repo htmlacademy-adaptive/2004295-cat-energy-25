@@ -3,23 +3,23 @@
 .footer {
   padding: 0 $base-indent;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background-color: $secondary-color;
 }
 
 .footer__socials-list {
   padding: 22px 0 21px;
+  min-width: 128px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-}
-
-.footer__org-logo {
-  display: flex;
-  justify-content: center;
 }
 
 //*tablet-width
@@ -30,7 +30,7 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     min-height: 147px;
   }
 

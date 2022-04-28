@@ -2,7 +2,7 @@
 
 .advantages {
   padding: 0 $base-indent;
-  margin-bottom: $base-indent;
+  margin-bottom: 22px;
 }
 
 .advantages__list {
@@ -13,8 +13,7 @@
 }
 
 .advantages__item {
-  padding: $base-indent;
-  padding-top: 30px;
+  padding: 30px $base-indent 18px;
 
   background-color: $secondary-color;
   overflow: hidden;
