@@ -55,9 +55,7 @@
 }
 
 .advantage-card__link-icon {
-  position: absolute;
-  top: 6px;
-  left: 100px;
+  padding: 1px 12px;
 }
 
 //*tablet-width
@@ -65,16 +63,16 @@
 @media (min-width: $tablet-width) {
   .advantage-card__image--slimming {
     width: 200px;
-    height: 211px;
-    left: 393px;
-    top: 0;
+    height: 212px;
+    left: 394px;
+    top: 3px;
   }
 
   .advantage-card__image--mass {
     width: 268px;
     height: 200px;
     left: 359px;
-    top: 10px;
+    top: 14px;
   }
 
   .advantage-card__header {
@@ -102,7 +100,7 @@
   }
 
   .advantage-card__link-icon {
-    top: 10px;
+    padding: 3px 23px;
   }
 }
 

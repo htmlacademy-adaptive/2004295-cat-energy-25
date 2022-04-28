@@ -74,6 +74,10 @@
   justify-content: space-between;
 
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+  }
 }
 
 // *Логотип HTML Academy (блок)

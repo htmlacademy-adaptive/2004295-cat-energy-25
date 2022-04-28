@@ -38,11 +38,12 @@
 
 @media (min-width: $tablet-width) {
   .partnership {
-    padding: 56px 70px;
+    padding: 60px 70px;
   }
 
   .partnership__wrapper {
     column-gap: 296px;
+    grid-template-columns: 172px 160px;
   }
 
   .partnership__title {

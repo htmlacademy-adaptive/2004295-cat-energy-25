@@ -32,8 +32,8 @@
 .real-case__result {
   margin: 0;
 
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
@@ -70,6 +70,7 @@
 
   .real-case__result {
     margin-left: auto;
+    margin-bottom: 7px;
 
     font-size: $secondary-fs;
     line-height: 1;
