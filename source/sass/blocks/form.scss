@@ -70,15 +70,15 @@
 }
 
 .form__contacts {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   &::before {
-    top: -69px;
+    top: -71px;
   }
 }
 
 .form__comment {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 
   &::before {
     top: -47px;
@@ -86,7 +86,7 @@
 }
 
 .form__additionally {
-  margin-bottom: 41px;
+  margin-bottom: 39px;
 
   &::before {
     top: -48px;
@@ -99,7 +99,7 @@
 }
 
 .form__submit-button {
-  padding: 7px;
+  padding: 10px;
   margin-bottom: 21px;
 
   font-size: $primary-fs;
