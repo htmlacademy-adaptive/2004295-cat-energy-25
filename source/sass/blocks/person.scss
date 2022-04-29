@@ -50,12 +50,12 @@
 @media (min-width: $tablet-width) {
   .person__label {
     &:not(:last-child) {
-      margin-bottom: $base-indent;
+      margin-bottom: 17px;
     }
   }
 
   .person__input {
-    padding: 10.4px 20px 11.6px;
+    padding: 11px 16px 11.6px;
   }
 
   .person__input--name {
