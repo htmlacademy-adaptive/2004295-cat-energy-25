@@ -209,7 +209,7 @@
   }
 
   .form__person-objective-wrapper {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -228,6 +228,7 @@
   }
 
   .form__contacts {
+    margin-bottom: 67px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
@@ -238,6 +239,8 @@
   }
 
   .form__comment {
+    margin-bottom: 62px;
+
     &::before {
       right: -110px;
     }
