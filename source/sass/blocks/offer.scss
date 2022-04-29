@@ -43,12 +43,22 @@
   background-image: linear-gradient(to top, $primary-color, $primary-color);
   opacity: 0.85;
   box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 62px;
+    top: 65px;
+    left: 110px;
+    background-image: url("/img/icon_gift.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .offer__text {
   margin: 0;
-
-  position: relative;
 
   font-family: $third-font-family;
   font-size: $primary-fs;
@@ -58,17 +68,6 @@
   color: $text-light;
 
   z-index: 1;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 58px;
-    height: 62px;
-    top: -122px;
-    left: 52px;
-    background-image: url("/img/icon_gift.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 //*tablet-width
@@ -85,17 +84,16 @@
     padding: 70px 124px;
 
     justify-content: flex-end;
+
+    &::before {
+      left: 90px;
+    }
   }
 
   .offer__text {
     max-width: 161px;
 
     text-align: left;
-
-    &::before {
-      top: -8px;
-      left: -276px;
-    }
   }
 }
 
