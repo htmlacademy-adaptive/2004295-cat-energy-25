@@ -40,11 +40,11 @@
 .footer__socials-list {
   margin: 0 auto;
   padding: 22px 0 21px;
-  min-width: 128px;
+  width: 128px;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 //*tablet-width
