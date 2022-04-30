@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <base href="https://htmlacademy-adaptive.github.io/2004295-cat-energy-25/10/">
+</head>
+
+<body class="body body--nojs">
+  <div class="body__wrapper">
+    <!-- *Header -->
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="logo-icon" href="#">
+            <svg class="logo-icon--mobile" width="33" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип мобильный.">
+              <use href="img/sprite.svg#logo-icon__mobile"></use>
+            </svg>
+            <svg class="logo-icon--tablet" width="174" height="51" role="img" aria-hidden="true" focusable="false" aria-label="Логотип планшетный.">
+              <use href="img/sprite.svg#logo-icon__tablet"></use>
+            </svg>
+            <svg class="logo-icon--desktop" width="202" height="59" role="img" aria-hidden="true" focusable="false" aria-label="Логотип десктопный.">
+              <use href="img/sprite.svg#logo-icon__desktop"></use>
+            </svg>
+          </a>
+          <p class="logo-text">
+            <svg class="logo-text__icon" width="101" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Логотип текстовый.">
+              <use href="img/sprite.svg#logo-text"></use>
+            </svg>
+          </p>
+        </div>
+        <nav class="header__navigation header-navigation header-navigation--closed">
+          <button class="header-navigation__button" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <ul class="header-navigation__list">
+            <li class="header-navigation__item">
+              <a class="header-navigation__link header-navigation__link--current header-navigation__link--light header-navigation__link--light-current">Главная</a>
+            </li>
+            <li class="header-navigation__item">
+              <a class="header-navigation__link header-navigation__link--light" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header-navigation__item">
+              <a class="header-navigation__link header-navigation__link--light" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <!-- *Product -->
+      <section class="product-presentation">
+        <div class="product-presentation__wrapper">
+          <div class="product-presentation__description main-product">
+            <h1 class="main-product__title primary-title primary-title--light">Функциональное <br>питание для котов</h1>
+            <p class="main-product__slogan ">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="product-presentation__image-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="/img/index-can-desktop.webp 1x, /img/index-can-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="/img/index-can-tablet.webp 1x, /img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="/img/index-can-mobile.webp 1x, /img/index-can-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" type="image/png" srcset="/img/index-can-desktop.png 1x, /img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/jpg" srcset="/img/index-can-tablet.jpg 1x, /img/index-can-tablet@2x.jpg 2x">
+              <img class="product-presentation__image"  width="280" height="270" src="/img/index-can-mobile.png" srcset="/img/index-can-mobile@2x.png 2x" alt="Cat Energy Product.">
+            </picture>
+          </div>
+          <a class="product-presentation__link primary-button" href="form.html">Подобрать программу</a>
+        </div>
+      </section>
+      <!-- *Advantages -->
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества.</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantage-card advantage-card--slimming">
+              <h3 class="advantage-card__header">Похудение</h3>
+              <p class="advantage-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+                деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="advantage-card__link" href="#">Каталог Slim
+                <svg class="advantage-card__link-icon" width="24" height="12" role="img" aria-label="Иконка стрелки." aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#link-arrow"></use>
+                </svg>
+              </a>
+              <div class="advantage-card__image-wrapper">
+                <svg class="advantage-card__image advantage-card__image--slimming" width="50" height="53" role="img" aria-hidden="true" focusable="false" aria-label="Иконка преимуществ - похудения.">
+                  <use href="img/sprite.svg#advantage-slimming"></use>
+                </svg>
+              </div>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantage-card advantage-card--mass">
+              <h3 class="advantage-card__header">Набор массы</h3>
+              <p class="advantage-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+                Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="advantage-card__link" href="#">Каталог Pro
+                <svg class="advantage-card__link-icon" width="24" height="12" role="img" aria-label="Иконка стрелки." aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#link-arrow"></use>
+                </svg>
+              </a>
+              <div class="advantage-card__image-wrapper">
+                <svg class="advantage-card__image advantage-card__image--mass" width="67" height="50" role="img" aria-hidden="true" focusable="false" aria-label="Иконка преимуществ - набор массы.">
+                  <use href="img/sprite.svg#advantage-mass"></use>
+                </svg>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- *Instructions -->
+      <section class="instructions">
+        <h2 class="instructions__header primary-title">Как это работает</h2>
+        <ol class="instructions__list">
+          <li class="instructions__item instructions__item--usefull">
+            <p class=" instructions__description">Функциональное питание содержит только полезные питательные вещества.</p>
+            <svg class="instructions__image" width="60" height="60" role="img" aria-hidden="true" focusable="false" aria-label="Иконка инструкции - полезно.">
+              <use href="img/sprite.svg#instructions-usefull"></use>
+            </svg>
+          </li>
+          <li class="instructions__item instructions__item--easy">
+            <p class=" instructions__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <svg class="instructions__image" width="60" height="60" role="img" aria-hidden="true" focusable="false" aria-label="Иконка инструкции - легко.">
+              <use href="img/sprite.svg#instructions-easy"></use>
+            </svg>
+          </li>
+          <li class="instructions__item instructions__item--food">
+            <p class=" instructions__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <svg class="instructions__image" width="60" height="60" role="img" aria-hidden="true" focusable="false" aria-label="Иконка инструкции - методы питания.">
+              <use href="img/sprite.svg#instructions-food"></use>
+            </svg>
+          </li>
+          <li class="instructions__item instructions__item--result">
+            <p class=" instructions__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
+            <svg class="instructions__image" width="60" height="60" role="img" aria-hidden="true" focusable="false" aria-label="Иконка инструкции - результат.">
+              <use href="img/sprite.svg#instructions-result"></use>
+            </svg>
+          </li>
+        </ol>
+      </section>
+      <!-- *Example -->
+      <div class="example">
+        <article class="example__article real-case ">
+          <h2 class="real-case__title primary-title">Живой пример</h2>
+          <p class="real-case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему
+            спит по 16 часов в день.</p>
+          <div class="real-case__values-wrapper">
+            <ul class="real-case__values values-list">
+              <li class="values-list__wrapper">
+                <span class="values-list__indicator">5 кг</span>
+                <p class="values-list__title">Снижение <br>веса</p>
+              </li>
+              <li class="values-list__wrapper">
+                <p class="values-list__title">Затрачено <br>времени</p>
+                <span class="values-list__indicator">60 дней</span>
+              </li>
+            </ul>
+            <p class="real-case__result">Затраты на питание: <span>15 000 РУБ.</span></p>
+          </div>
+        </article>
+        <div class="main-slider">
+          <div class="main-slider__image-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="/img/cat-compare-tablet.webp 1x, /img/cat-compare-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="/img/cat-fat-mobile.webp 1x, /img/cat-fat-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" type="image/png" srcset="/img/cat-compare-tablet.png 1x, /img/cat-compare-tablet@2x.png 2x">
+              <img class="main-slider__image" width="280" height="232" src="/img/cat-fat-mobile.png" srcset="/img/cat-fat-mobile@2x.png 2x" alt="Fat cat.">
+            </picture>
+          </div>
+          <form class="main-slider__range-form" method="post">
+            <input class="main-slider__range range-slider custom-range" type="range" name="Результат" id="result">
+            <label class="main-slider__range-label main-slider__range-label--before" for="result">Было</label>
+            <label class="main-slider__range-label main-slider__range-label--after" for="result">Стало</label>
+          </form>
+        </div>
+      </div>
+      <!-- *Partnership -->
+      <section class="partnership">
+        <h2 class="visually-hidden">Наши контакты.</h2>
+        <div class="partnership__wrapper">
+          <h3 class="partnership__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+          <p class="partnership__description">ул. Большая Конюшенная, д. 19/8 <span class="partnership__city">Санкт-Петербург</span></p>
+        </div>
+      </section>
+      <!-- *Map -->
+      <section class="map">
+        <h3 class="visually-hidden">Адрес на карте.</h3>
+        <iframe class="map__frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2984521306922!2d30.3228059997934!3d59.938830686690956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648811503924!5m2!1sru!2sru"
+          width="320" style="border: 0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+    </main>
+    <!-- *Footer -->
+    <footer class="footer">
+      <a class="footer__org-logo" href="#">
+        <svg class="logo-text__icon" width="128" height="24" role="img" aria-hidden="true" focusable="false" aria-label="Логотип текстовый.">
+          <use href="img/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
+      <ul class="footer__socials-list socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+            <svg class="socials__link-image" width="27" height="17" role="img" aria-hidden="true" focusable="false" aria-label="Иконка ВК.">
+              <use href="img/sprite.svg#socials-vk"></use>
+            </svg>
+            <span class="visually-hidden">VK.</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube"
+            href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank">
+            <svg class="socials__link-image" width="24" height="19" role="img" aria-hidden="true" focusable="false" aria-label="Иконка Youtube.">
+              <use href="img/sprite.svg#socials-youtube"></use>
+            </svg>
+            <span class="visually-hidden">Youtube.</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="https://t.me/s/htmlacademy" target="_blank">
+            <svg class="socials__link-image" width="20" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Иконка Telegram.">
+              <use href="img/sprite.svg#socials-telegram"></use>
+            </svg>
+            <span class="visually-hidden">Telegram.</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__dev-logo developer-logo">
+        <a class="developer-logo__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        <a class="developer-logo__icon" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="developer-logo__image" width="27" height="34" role="img" aria-hidden="true" focusable="false" aria-label="Логотип разработчика.">
+            <use href="img/sprite.svg#developer-logo"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
