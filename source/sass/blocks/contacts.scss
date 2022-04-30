@@ -12,7 +12,7 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 }
 
@@ -43,11 +43,11 @@
 .contacts__input--email {
   width: 219px;
 
-  &:focus + .contacts__input-image--email path {
+  &:focus + .contacts__input-image--email {
     stroke: $primary-color;
   }
 
-  &:invalid + .contacts__input-image--email path {
+  &:invalid + .contacts__input-image--email {
     stroke: $error-color;
   }
 }
@@ -55,12 +55,12 @@
 .contacts__input--phone {
   width: 204px;
 
-  &:focus + .contacts__input-image--phone path {
+  &:focus + .contacts__input-image--phone {
     fill: $primary-color;
   }
 
-  &:invalid + .contacts__input-image--phone path {
-    fill: $error-color;
+  &:invalid + .contacts__input-image--phone {
+    stroke: $error-color;
   }
 }
 
@@ -70,10 +70,14 @@
 
 .contacts__input-image--email {
   right: 16px;
+
+  stroke: #222222;
 }
 
 .contacts__input-image--phone {
   right: 13px;
+
+  fill: #000000;
 }
 
 //*tablet-width

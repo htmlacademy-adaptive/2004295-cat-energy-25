@@ -2,12 +2,15 @@
 
 .instructions {
   padding: 0 $base-indent;
+  padding-left: 21px;
   margin-bottom: 53px;
 }
 
 .instructions__header {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
+
+  vertical-align: middle;
 }
 
 .instructions__list {
@@ -31,7 +34,7 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: $base-indent;
+    margin-bottom: 26px;
   }
 }
 
@@ -66,7 +69,7 @@
   .instructions__list {
     display: grid;
     grid-template-columns: repeat(2, 250px);
-    column-gap: 133px;
+    column-gap: 134px;
     row-gap: 37px;
     counter-reset: steps;
   }
@@ -89,6 +92,12 @@
 
     &:not(:last-child) {
       margin-bottom: 0;
+    }
+  }
+
+  .instructions__item--usefull {
+    &::before {
+      right: 25px;
     }
   }
 
@@ -118,6 +127,6 @@
 
   .instructions__list {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 77px;
+    column-gap: 80px;
   }
 }

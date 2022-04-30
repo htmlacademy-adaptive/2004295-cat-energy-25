@@ -1,20 +1,10 @@
 //*Соц. сети
 
 .socials {
-  margin: 0;
-
   list-style: none;
 }
 
 .socials__item {
-  &:not(:last-child) {
-    margin-right: 24px;
-  }
-
-  &:hover .socials__image {
-    fill: $primary-color;
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -23,4 +13,12 @@
 .socials__link {
   display: flex;
   align-items: center;
+}
+
+.socials__link-image {
+  fill: #666666;
+
+  &:hover {
+    fill: $primary-color;
+  }
 }

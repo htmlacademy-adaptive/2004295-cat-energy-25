@@ -1,26 +1,6 @@
-// *Логотип в виде текста в Шапке (блок)
-
-.logo-text {
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-// Красит часть Логотипа в виде текста в шапке в темный цвет
-
-.logo-text__image {
-  path:last-child {
-    fill: $text-darker;
-  }
-}
-
-// *Логотип в виде иконки в Шапке (блок)
+// *Логотип в Шапке
 
 .logo-icon {
-  display: flex;
-
   &:hover {
     opacity: 0.6;
   }
@@ -30,17 +10,49 @@
   }
 }
 
-.logo-icon__image {
-  width: 100%;
+.logo-text {
+  margin: 0;
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo-icon--tablet,
+  .logo-icon--desktop {
+    display: none;
+  }
+
+  .logo-text {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo-icon--mobile,
+  .logo-icon--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-icon--mobile,
+  .logo-icon--tablet {
+    display: none;
+  }
+
+  .logo-icon--desktop {
+    display: inline-block;
+  }
 }
 
 //* Логотип Cat Energy в Подвале (элемент)
 
 .footer__org-logo {
-  padding: 39px 0 31px;
+  padding: 39px 0 32px;
+
+  display: flex;
+  justify-content: center;
 
   text-align: center;
-  display: block;
 
   &:hover {
     opacity: 0.6;
@@ -55,23 +67,31 @@
 
 .footer__dev-logo {
   padding: 22px 0;
+  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+  }
 }
 
 // *Логотип HTML Academy (блок)
 
-.developer-logo {
-  &:hover .developer-logo__icon-path {
-    fill: $primary-color;
-  }
+.developer-logo__image {
+  fill: #666666;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.developer-logo:hover .developer-logo__image {
+  fill: $primary-color;
+}
+
+.developer-logo:active {
+  opacity: 0.3;
 }
 
 // Текстовая часть

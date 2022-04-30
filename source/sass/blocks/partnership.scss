@@ -11,8 +11,8 @@
 
 .partnership__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
+  grid-template-columns: 124px 139px;
+  justify-content: space-between;
 }
 
 .partnership__title {
@@ -38,11 +38,12 @@
 
 @media (min-width: $tablet-width) {
   .partnership {
-    padding: 56px 70px;
+    padding: 60px 70px;
   }
 
   .partnership__wrapper {
     column-gap: 296px;
+    grid-template-columns: 172px 160px;
   }
 
   .partnership__title {
@@ -64,7 +65,7 @@
 
 @media (min-width: $desktop-width) {
   .partnership {
-    padding: 56px 80px;
+    padding: 61px 80px;
     max-width: 565px;
 
     position: absolute;

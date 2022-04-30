@@ -1,11 +1,11 @@
 //*Список доп. товаров (catalog)
 
 .another-list {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .another-list__item {
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
 
   display: flex;
   flex-direction: column;
@@ -56,13 +56,17 @@
 //*tablet-width
 
 @media (min-width: $tablet-width) {
+  .another-list {
+    margin-bottom: 68px;
+  }
+
   .another-list__item {
-    padding: 26px 38px 28px;
+    padding: 26px 37px 28px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-    row-gap: 25px;
+    row-gap: 24px;
 
     border: 1px solid $color-3;
     border-bottom: none;
@@ -80,6 +84,7 @@
 
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 0;
 
     text-align: right;
     font-size: $primary-fs;
@@ -103,7 +108,7 @@
 
     display: grid;
     grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
-    align-items: center;
+    align-items: baseline;
     column-gap: 0;
     row-gap: 0;
 

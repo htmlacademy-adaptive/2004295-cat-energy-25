@@ -1,7 +1,7 @@
 //*Живой пример (index)
 
 .example {
-  padding: 25px $base-indent 40px;
+  padding: 27px $base-indent 40px;
 
   background-color: $secondary-color-darker;
 }
@@ -32,7 +32,7 @@
   }
 
   .example__article {
-    margin-bottom: 72px;
+    margin-bottom: 80px;
   }
 }
 
@@ -40,7 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding: 0 $base-indent-desktop 71px;
+    padding: 0 109px 68px $base-indent-desktop;
 
     display: grid;
     grid-template-columns: 436px 592px;

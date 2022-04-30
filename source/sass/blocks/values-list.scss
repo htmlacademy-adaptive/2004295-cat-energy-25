@@ -82,12 +82,13 @@
     &::before {
       width: 162px;
       height: 72px;
-      top: -15px;
+      top: 0;
     }
   }
 
   .values-list__indicator {
-    margin-bottom: 11px;
+    margin-bottom: 0;
+    padding: 15px 0 11px;
 
     font-size: 30px;
     line-height: 37px;

@@ -8,7 +8,7 @@
 }
 
 .catalog-list__item {
-  padding: 19px 0 25px;
+  padding: 19px 0 26px;
 
   position: relative;
 
@@ -70,7 +70,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 62px;
+    row-gap: 58px;
   }
 
   .catalog-list__item {
