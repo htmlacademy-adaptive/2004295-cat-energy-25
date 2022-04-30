@@ -33,6 +33,10 @@
   &:disabled + .additionally__checkbox-mark {
     opacity: 0.3;
   }
+
+  &:focus + .additionally__checkbox-mark {
+    outline: 2px solid $text-light-dark-1;
+  }
 }
 
 .additionally__checkbox-mark {
