@@ -2,6 +2,8 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso'; //Минифицирует css
+import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -9,12 +11,14 @@ import browser from 'browser-sync';
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
+    .pipe(plumber()) //Помогает удерживать сборку в активном состоянии (обработка ошибок)
+    .pipe(sass().on('error', sass.logError)) //Превращает sass в css
+    .pipe(postcss([ //Библиотека плагинов для css
+      autoprefixer(), //Добавляет префиксы
+      csso() //Минифицирует css
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' })) //Указание положить результат в такую-то папку
     .pipe(browser.stream());
 }
 
