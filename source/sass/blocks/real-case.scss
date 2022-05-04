@@ -15,7 +15,7 @@
 
 .real-case__description {
   margin: 0;
-  margin-bottom: $base-indent;
+  margin-bottom: 34px;
 
   font-size: $third-fs;
   line-height: 18px;
@@ -27,6 +27,7 @@
 .real-case__values {
   margin: 0;
   margin-bottom: $base-indent;
+  padding: 0;
 }
 
 .real-case__result {
@@ -36,6 +37,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  column-gap: 5px;
 
   font-size: $third-fs;
   line-height: 20px;
@@ -62,6 +64,7 @@
   .real-case__values-wrapper {
     display: flex;
     align-items: center;
+    column-gap: 20px;
   }
 
   .real-case__values {
