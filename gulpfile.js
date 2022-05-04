@@ -6,19 +6,33 @@ import csso from 'postcss-csso'; //Минифицирует css
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import svgstore from 'gulp-svgstore';
+import svgo from 'gulp-svgmin';
+
+// Svg
+
+const sprite = () => {
+  return gulp.src('source/img/**/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
+}
 
 // Styles
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber()) //Помогает удерживать сборку в активном состоянии (обработка ошибок)
-    .pipe(sass().on('error', sass.logError)) //Превращает sass в css
-    .pipe(postcss([ //Библиотека плагинов для css
-      autoprefixer(), //Добавляет префиксы
-      csso() //Минифицирует css
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' })) //Указание положить результат в такую-то папку
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -42,7 +56,6 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
-
 
 export default gulp.series(
   styles, server, watcher
