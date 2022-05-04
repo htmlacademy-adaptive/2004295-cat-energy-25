@@ -30,7 +30,8 @@
     border-color: $color-5;
   }
 
-  &:disabled + .objective__checkbox-mark {
+  &:disabled + .objective__checkbox-mark,
+  &:disabled ~ .objective__checkbox-name {
     opacity: 0.3;
   }
 

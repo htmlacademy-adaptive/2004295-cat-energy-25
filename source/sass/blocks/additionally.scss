@@ -30,7 +30,8 @@
     border-color: $color-5;
   }
 
-  &:disabled + .additionally__checkbox-mark {
+  &:disabled + .additionally__checkbox-mark,
+  &:disabled ~ .additionally__checkbox-name {
     opacity: 0.3;
   }
 
