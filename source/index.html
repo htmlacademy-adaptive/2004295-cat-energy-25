@@ -167,14 +167,22 @@
           </div>
         </article>
         <div class="main-slider">
-          <div class="main-slider__image-wrapper">
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="/img/cat-compare-tablet.webp 1x, /img/cat-compare-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="/img/cat-fat-mobile.webp 1x, /img/cat-fat-mobile@2x.webp 2x">
+          <div class="main-slider__image-container">
+            <div class="main-slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="/img/cat-fat-tablet.webp 1x, /img/cat-fat-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="/img/cat-fat-mobile.webp 1x, /img/cat-fat-mobile@2x.webp 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="/img/cat-compare-tablet.png 1x, /img/cat-compare-tablet@2x.png 2x">
-              <img class="main-slider__image" width="280" height="232" src="/img/cat-fat-mobile.png" srcset="/img/cat-fat-mobile@2x.png 2x" alt="Fat cat.">
-            </picture>
+                <source media="(min-width: 768px)" type="image/png" srcset="/img/cat-fat-tablet.png 1x, /img/cat-fat-tablet@2x.png 2x">
+                <img class="main-slider__image main-slider__image--fat" width="280" height="232" src="/img/cat-fat-mobile.png" srcset="/img/cat-fat-mobile@2x.png 2x" alt="Fat cat.">
+              </picture>
+            </div>
+            <div class="main-slider__image-wrapper main-slider__image-wrapper--skinny">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="/img/cat-skinny-tablet.webp 1x, /img/cat-skinny-tablet@2x.webp 2x">
+                <img class="main-slider__image main-slider__image--skinny" width="592" height="511" src="/img/cat-skinny-tablet.png" srcset="/img/cat-skinny-tablet@2x.png 2x" alt="skinny cat.">
+              </picture>
+            </div>
           </div>
           <form class="main-slider__range-form" method="post">
             <input class="main-slider__range range-slider custom-range" type="range" name="Результат" id="result">
