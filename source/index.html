@@ -8,7 +8,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.css">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
 </head>
 
@@ -17,22 +17,24 @@
     <!-- *Header -->
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__logo-wrapper">
-          <a class="logo-icon" href="#">
-            <svg class="logo-icon--mobile" width="33" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип мобильный.">
-              <use href="img/sprite.svg#logo-icon__mobile"></use>
+        <div class="logo">
+          <a class="logo__icon" href="#">
+            <svg class="logo__icon--mobile" width="33" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип мобильный.">
+              <use href="img/sprite.svg#logo-icon-mobile"></use>
             </svg>
-            <svg class="logo-icon--tablet" width="174" height="51" role="img" aria-hidden="true" focusable="false" aria-label="Логотип планшетный.">
-              <use href="img/sprite.svg#logo-icon__tablet"></use>
+            <svg class="logo__icon--tablet" width="174" height="51" role="img" aria-hidden="true" focusable="false" aria-label="Логотип планшетный.">
+              <use href="img/sprite.svg#logo-icon-tablet"></use>
             </svg>
-            <svg class="logo-icon--desktop" width="202" height="59" role="img" aria-hidden="true" focusable="false" aria-label="Логотип десктопный.">
-              <use href="img/sprite.svg#logo-icon__desktop"></use>
+            <svg class="logo__icon--desktop" width="202" height="59" role="img" aria-hidden="true" focusable="false" aria-label="Логотип десктопный.">
+              <use href="img/sprite.svg#logo-icon-desktop"></use>
             </svg>
+            <span class="visually-hidden">Логотип компании.</span>
           </a>
-          <p class="logo-text">
-            <svg class="logo-text__icon" width="101" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Логотип текстовый.">
-              <use href="img/sprite.svg#logo-text"></use>
+          <p class="logo__text">
+            <svg class="logo__text-icon" width="101" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Логотип текстовый.">
+              <use href="img/sprite.svg#logo-text-icon"></use>
             </svg>
+            <span class="visually-hidden">Название компании.</span>
           </p>
         </div>
         <nav class="header__navigation header-navigation header-navigation--closed">
@@ -90,7 +92,7 @@
                 </svg>
               </a>
               <div class="advantage-card__image-wrapper">
-                <svg class="advantage-card__image advantage-card__image--slimming" width="50" height="53" role="img" aria-hidden="true" focusable="false" aria-label="Иконка преимуществ - похудения.">
+                <svg class="advantage-card__image advantage-card__image--slimming" width="50" height="53" role="img" focusable="false" aria-label="Иконка преимуществ - похудения.">
                   <use href="img/sprite.svg#advantage-slimming"></use>
                 </svg>
               </div>
@@ -107,7 +109,7 @@
                 </svg>
               </a>
               <div class="advantage-card__image-wrapper">
-                <svg class="advantage-card__image advantage-card__image--mass" width="67" height="50" role="img" aria-hidden="true" focusable="false" aria-label="Иконка преимуществ - набор массы.">
+                <svg class="advantage-card__image advantage-card__image--mass" width="67" height="50" role="img" focusable="false" aria-label="Иконка преимуществ - набор массы.">
                   <use href="img/sprite.svg#advantage-mass"></use>
                 </svg>
               </div>
@@ -167,14 +169,22 @@
           </div>
         </article>
         <div class="main-slider">
-          <div class="main-slider__image-wrapper">
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="/img/cat-compare-tablet.webp 1x, /img/cat-compare-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="/img/cat-fat-mobile.webp 1x, /img/cat-fat-mobile@2x.webp 2x">
+          <div class="main-slider__image-container">
+            <div class="main-slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="/img/cat-fat-tablet.webp 1x, /img/cat-fat-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="/img/cat-fat-mobile.webp 1x, /img/cat-fat-mobile@2x.webp 2x">
 
-              <source media="(min-width: 768px)" type="image/png" srcset="/img/cat-compare-tablet.png 1x, /img/cat-compare-tablet@2x.png 2x">
-              <img class="main-slider__image" width="280" height="232" src="/img/cat-fat-mobile.png" srcset="/img/cat-fat-mobile@2x.png 2x" alt="Fat cat.">
-            </picture>
+                <source media="(min-width: 768px)" type="image/png" srcset="/img/cat-fat-tablet.png 1x, /img/cat-fat-tablet@2x.png 2x">
+                <img class="main-slider__image main-slider__image--fat" width="280" height="232" src="/img/cat-fat-mobile.png" srcset="/img/cat-fat-mobile@2x.png 2x" alt="Fat cat.">
+              </picture>
+            </div>
+            <div class="main-slider__image-wrapper main-slider__image-wrapper--skinny">
+              <picture>
+                <source type="image/webp" srcset="/img/cat-skinny-tablet.webp 1x, /img/cat-skinny-tablet@2x.webp 2x">
+                <img class="main-slider__image main-slider__image--skinny" width="592" height="511" src="/img/cat-skinny-tablet.png" srcset="/img/cat-skinny-tablet@2x.png 2x" alt="skinny cat.">
+              </picture>
+            </div>
           </div>
           <form class="main-slider__range-form" method="post">
             <input class="main-slider__range range-slider custom-range" type="range" name="Результат" id="result">
@@ -204,9 +214,10 @@
     <!-- *Footer -->
     <footer class="footer">
       <a class="footer__org-logo" href="#">
-        <svg class="logo-text__icon" width="128" height="24" role="img" aria-hidden="true" focusable="false" aria-label="Логотип текстовый.">
-          <use href="img/sprite.svg#logo-text"></use>
+        <svg class="logo__text-icon" width="128" height="24" role="img" aria-hidden="true" focusable="false" aria-label="Логотип компании.">
+          <use href="img/sprite.svg#logo-text-icon"></use>
         </svg>
+        <span class="visually-hidden">Логотип компании.</span>
       </a>
       <ul class="footer__socials-list socials">
         <li class="socials__item">
@@ -241,11 +252,12 @@
           <svg class="developer-logo__image" width="27" height="34" role="img" aria-hidden="true" focusable="false" aria-label="Логотип разработчика.">
             <use href="img/sprite.svg#developer-logo"></use>
           </svg>
+          <span class="visually-hidden">Логотип разработчика.</span>
         </a>
       </div>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

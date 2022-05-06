@@ -1,6 +1,21 @@
-// *Логотип в Шапке
+// *Логотип (Header)
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-.logo-icon {
+  width: 191px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
+.logo__icon {
   &:hover {
     opacity: 0.6;
   }
@@ -10,78 +25,42 @@
   }
 }
 
-.logo-text {
+.logo__text {
   margin: 0;
   display: none;
 }
 
+// *Смена логотипов (Media queries)
 @media (max-width: $mobile-width-only) {
-  .logo-icon--tablet,
-  .logo-icon--desktop {
+  .logo__icon--tablet,
+  .logo__icon--desktop {
     display: none;
   }
 
-  .logo-text {
+  .logo__text {
     display: flex;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .logo-icon--mobile,
-  .logo-icon--desktop {
+  .logo__icon--mobile,
+  .logo__icon--desktop {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .logo-icon--mobile,
-  .logo-icon--tablet {
+  .logo__icon--mobile,
+  .logo__icon--tablet {
     display: none;
   }
 
-  .logo-icon--desktop {
+  .logo__icon--desktop {
     display: inline-block;
   }
 }
 
-//* Логотип Cat Energy в Подвале (элемент)
-
-.footer__org-logo {
-  padding: 39px 0 32px;
-
-  display: flex;
-  justify-content: center;
-
-  text-align: center;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-//* Логотип HTML Academy в Подвале (элемент)
-
-.footer__dev-logo {
-  padding: 22px 0;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    max-width: 163px;
-  }
-}
-
-// *Логотип HTML Academy (блок)
-
+// *Логотип HTML Academy (Footer)
 .developer-logo__image {
   fill: #666666;
 }
