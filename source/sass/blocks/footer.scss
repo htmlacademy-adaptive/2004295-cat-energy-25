@@ -9,7 +9,15 @@
   background-color: $secondary-color;
 }
 
+//* Логотип Cat Energy
 .footer__org-logo {
+  padding: 39px 0 32px;
+
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+
   position: relative;
 
   &::after {
@@ -21,9 +29,27 @@
     left: -$base-indent;
     bottom: 0;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+//* Логотип HTML Academy
 .footer__dev-logo {
+  padding: 22px 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
   position: relative;
 
   &::before {
@@ -34,6 +60,10 @@
     background-color: #d9d9d9;
     left: -$base-indent;
     top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
   }
 }
 

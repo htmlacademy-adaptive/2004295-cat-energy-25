@@ -17,16 +17,6 @@
   flex-wrap: wrap;
 }
 
-.header__logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: $mobile-width-only) {
-    width: 191px;
-  }
-}
-
 //*tablet-width
 
 @media (min-width: $tablet-width) {
@@ -37,10 +27,6 @@
 
   .header__wrapper {
     justify-content: start;
-  }
-
-  .header__logo-wrapper {
-    width: 174px;
   }
 
   .header__navigation {
@@ -58,9 +44,5 @@
     padding: 0 $base-indent-desktop;
     margin-bottom: 0;
     min-height: 168px;
-  }
-
-  .header__logo-wrapper {
-    width: 202px;
   }
 }
