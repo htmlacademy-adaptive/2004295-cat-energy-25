@@ -20,13 +20,13 @@
       <div class="header__wrapper">
         <div class="logo">
           <a class="logo__icon" href="#">
-            <svg class="logo__icon--mobile" width="33" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип мобильный.">
+            <svg class="logo__image logo__image--mobile" width="33" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип мобильный.">
               <use href="img/sprite.svg#logo-icon-mobile"></use>
             </svg>
-            <svg class="logo__icon--tablet" width="174" height="51" role="img" aria-hidden="true" focusable="false" aria-label="Логотип планшетный.">
+            <svg class="logo__image logo__image--tablet" width="174" height="51" role="img" aria-hidden="true" focusable="false" aria-label="Логотип планшетный.">
               <use href="img/sprite.svg#logo-icon-tablet"></use>
             </svg>
-            <svg class="logo__icon--desktop" width="202" height="59" role="img" aria-hidden="true" focusable="false" aria-label="Логотип десктопный.">
+            <svg class="logo__image logo__image--desktop" width="202" height="59" role="img" aria-hidden="true" focusable="false" aria-label="Логотип десктопный.">
               <use href="img/sprite.svg#logo-icon-desktop"></use>
             </svg>
             <span class="visually-hidden">Логотип компании.</span>
@@ -187,11 +187,15 @@
               </picture>
             </div>
           </div>
-          <form class="main-slider__range-form" method="post">
-            <input class="main-slider__range range-slider custom-range" type="range" name="Результат" id="result">
-            <label class="main-slider__range-label main-slider__range-label--before" for="result">Было</label>
-            <label class="main-slider__range-label main-slider__range-label--after" for="result">Стало</label>
-          </form>
+          <div class="main-slider__range-container compare-slider">
+            <div class="compare-slider__track">
+              <button class="compare-slider__thumb" type="button">
+                <span class="visually-hidden">Кнопка сравнения результатов применения питания.</span>
+              </button>
+            </div>
+            <button class="compare-slider__label compare-slider__label--before" type="button">Было</button>
+            <button class="compare-slider__label compare-slider__label--after" type="button">Стало</button>
+          </div>
         </div>
       </div>
       <!-- *Partnership -->
@@ -215,7 +219,7 @@
     <!-- *Footer -->
     <footer class="footer">
       <a class="footer__org-logo" href="#">
-        <svg class="logo__text-icon" width="128" height="24" role="img" aria-hidden="true" focusable="false" aria-label="Логотип компании.">
+        <svg class="footer__org-image" width="128" height="24" role="img" aria-hidden="true" focusable="false" aria-label="Логотип компании.">
           <use href="img/sprite.svg#logo-text-icon"></use>
         </svg>
         <span class="visually-hidden">Логотип компании.</span>

@@ -1,0 +1,132 @@
+.compare-slider {
+  max-width: 210px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  column-gap: 13px;
+  align-items: center;
+}
+
+.compare-slider__label {
+  padding: 0;
+
+  grid-row: 1;
+
+  font-family: $primary-font-family;
+  font-size: $primary-fs;
+  line-height: 20px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.compare-slider__label--before {
+  grid-column: 1/2;
+}
+
+.compare-slider__label--after {
+  grid-column: -2/-1;
+}
+
+.compare-slider__track {
+  margin: 8px 0;
+  padding: 4px 6px;
+
+  display: flex;
+
+  background-color: $background-light;
+  border: 1px solid $color-3;
+  border-radius: 6px;
+}
+
+.compare-slider__thumb {
+  padding: 0;
+  width: 50%;
+  min-height: 6px;
+
+  background-color: $primary-color;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+//*tablet-width
+
+@media (min-width: $tablet-width) {
+  .compare-slider {
+    max-width: 592px;
+
+    grid-template-columns: 70px 1fr 70px;
+  }
+
+  .compare-slider__label {
+    font-size: $secondary-fs;
+    line-height: 30px;
+
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .compare-slider__track {
+    margin: auto 0;
+    padding: 0;
+    min-height: 6px;
+
+    background-color: $color-6;
+    border: none;
+
+    position: relative;
+
+    &:hover ~ .compare-slider__label {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 6px;
+      text-decoration-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &:active ~ .compare-slider__label {
+      text-decoration: none;
+    }
+  }
+
+  .compare-slider__thumb {
+    width: 34px;
+    height: 34px;
+
+    position: absolute;
+    top: -14px;
+    left: 200px;
+
+    background-color: $primary-color;
+    border-radius: 50%;
+    border: 1px solid $color-3;
+
+    box-shadow: inset 0 0 0 12px $background-light, 0 1px 3px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      box-shadow: inset 0 0 0 12px $background-light, 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      border: 1px solid $primary-color;
+      box-shadow: inset 0 0 0 12px $background-light, 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+//*desktop-width
+
+@media (min-width: $desktop-width) {
+  .compare-slider {
+    width: 592px;
+  }
+}
