@@ -32,8 +32,8 @@
 
 // *Смена логотипов (Media queries)
 @media (max-width: $mobile-width-only) {
-  .logo__icon--tablet,
-  .logo__icon--desktop {
+  .logo__image--tablet,
+  .logo__image--desktop {
     display: none;
   }
 
@@ -43,19 +43,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo__icon--mobile,
-  .logo__icon--desktop {
+  .logo__image--mobile,
+  .logo__image--desktop {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .logo__icon--mobile,
-  .logo__icon--tablet {
+  .logo__image--mobile,
+  .logo__image--tablet {
     display: none;
   }
 
-  .logo__icon--desktop {
+  .logo__image--desktop {
     display: inline-block;
   }
 }
