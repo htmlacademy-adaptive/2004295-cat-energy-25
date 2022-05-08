@@ -52,7 +52,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
+    gap: 80px;
   }
 
   .advantages__item {
