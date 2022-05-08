@@ -1,6 +1,7 @@
 .compare-slider {
-  max-width: 210px;
   margin: 0 auto;
+  max-width: 210px;
+  min-height: 30px;
 
   display: grid;
   grid-template-columns: 50px 1fr 50px;
@@ -34,7 +35,6 @@
 }
 
 .compare-slider__track {
-  margin: 8px 0;
   padding: 4px 6px;
 
   display: flex;
