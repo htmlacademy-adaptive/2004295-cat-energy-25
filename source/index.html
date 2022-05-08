@@ -187,11 +187,15 @@
               </picture>
             </div>
           </div>
-          <form class="main-slider__range-form" method="post">
-            <input class="main-slider__range range-slider custom-range" type="range" name="Результат" id="result">
-            <label class="main-slider__range-label main-slider__range-label--before" for="result">Было</label>
-            <label class="main-slider__range-label main-slider__range-label--after" for="result">Стало</label>
-          </form>
+          <div class="main-slider__range-container compare-slider">
+            <div class="compare-slider__track">
+              <button class="compare-slider__thumb" type="button">
+                <span class="visually-hidden">Кнопка визуального сравнения.</span>
+              </button>
+            </div>
+            <button class="compare-slider__label compare-slider__label--before" type="button">Было</button>
+            <button class="compare-slider__label compare-slider__label--after" type="button">Стало</button>
+          </div>
         </div>
       </div>
       <!-- *Partnership -->
